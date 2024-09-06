@@ -1,0 +1,12 @@
+---
+import Container from "./Container.astro";
+type Props = {
+  className?: string;
+};
+
+const { className } = Astro.props;
+---
+
+<Container className="grid place-items-center">
+  <div class=`border-t-[2.5px] border-black ${className}`></div>
+</Container>

@@ -1,0 +1,167 @@
+---
+import Image from "astro/components/Image.astro";
+import WhatsappSVG from "../svgComponents/WhatsappSVG.astro";
+import MailSVG from "../svgComponents/MailSVG.astro";
+import FacebookSVG from "../svgComponents/FacebookSVG.astro";
+import InstagramSVG from "../svgComponents/InstagramSVG.astro";
+---
+
+<section class="w-full">
+  <div class="grid md:mt-4 lg:mt-0 py-6 max-w-screen-xl md:mx-10 xl:mx-auto">
+    <div
+      class="h-auto flex flex-col gap-y-3 md:flex-row md:items-center justify-between"
+    >
+      <div class="flex flex-col">
+        <a
+          href="#hero"
+          class="self-center"
+        >
+          <Image
+            height="1"
+            width="1"
+            class="h-auto w-[150px] md:w-[200px] lg:w-[300px]"
+            src={"/logos/logo_salsilvetti.avif"}
+            alt="Logo Sal & Silvetti Asesores de Seguros"
+          />
+        </a>
+        <a
+          class="self-center"
+          href="https://www.argentina.gob.ar/superintendencia-de-seguros"
+          target="_blank"
+        >
+          <Image
+            height="1"
+            width="1"
+            class="h-auto w-[150px] md:w-[200px] lg:w-[300px]"
+            src={"/logos/ssn_logo.avif"}
+            alt="Logo Superintendencia de Seguros de la Nación"
+          />
+        </a>
+        <p class="text-pesceBlack-50 place-self-center">ins. s.s.nº ....</p>
+      </div>
+
+      <div
+        class="flex flex-col justify-center items-center gap-2 text-pesceBlack-100 w-full"
+      >
+        <div>
+          <p class="xl:text-xl">Domicilio</p>
+          <p class="xl:text-xl text-center">Telefono</p>
+        </div>
+        <div class="flex flex-row gap-4">
+          <a
+            aria-label="Link al Instagram de Sal & Silvetti Asesores de Seguros"
+            href="https://www.instagram.com/salysilvetti/?hl=es-la"
+            target="_blank"
+            class="transition hover:scale-150"
+          >
+            <InstagramSVG
+              width="30"
+              height="30"
+            />
+          </a>
+
+          <!--           <a
+            aria-label="Link al Linkedin de Sal & Silvetti Asesores de Seguros"
+            href="https://www.facebook.com/p/Ricardo-Pablo-Pesce-Hijos-Asesores-de-Seguros-100083078217553/?_rdr"
+            target="_blank"
+            class="transition hover:scale-150 hover:text-[#3b5998]"
+          >
+            <FacebookSVG
+              width="30"
+              height="30"
+            />
+          </a> -->
+
+          <button
+            aria-label="Link para copiar el mail de Sal & Silvetti Asesores de Seguros"
+            id="mail"
+            class="transition hover:scale-150 hover:text-red-400"
+          >
+            <MailSVG
+              width="30"
+              height="30"
+            />
+          </button>
+          <a
+            aria-label="Link para mensaje directo al Wathsapp de Sal & Silvetti Asesores de Seguros"
+            href="https://wa.me/5493815509173?text=Hola, quiero hacerles una consulta"
+            target="_blank"
+            class="transition hover:scale-150 hover:text-[#2bd46a]"
+          >
+            <WhatsappSVG
+              width="30"
+              height="30"
+            />
+          </a>
+        </div>
+      </div>
+
+      <a
+        class="flex justify-center w-full md:w-[200px] lg:w-[300px]"
+        aria-label="Link de afip de Sal & Silvetti Asesores de Seguros"
+        href="http://qr.afip.gob.ar/?qr=sYF7I-QMs38B9BInoFjJxQ,,"
+        target="_F960AFIPInfo"
+      >
+        <Image
+          class="h-auto w-[50px] md:w-[60px] lg:w-[80px]"
+          alt="Información de afip ..."
+          height={1}
+          width={1}
+          src={"/mockImg/DATAWEB.avif"}
+        />
+      </a>
+    </div>
+  </div>
+  <p class="text-center text-xs font-semibold text-pesceBlack-100/40">
+    Desarrollado por <a
+      aria-label="Link al Github de JM-Dev"
+      href="https://github.com/JM-Dev-ARG"
+      target="_blank"
+      >JM-DEV</a
+    > / Agencia Panambi
+  </p>
+</section>
+
+<style>
+  #instagram-icon:hover {
+    stroke: url(#instagram-gradient);
+  }
+</style>
+
+<script>
+  import Swal from "sweetalert2";
+
+  const data = "silvettifrancisco@gmail.com";
+  const btnMail = document.getElementById("mail");
+
+  btnMail?.addEventListener("click", () => {
+    copyToClipboard(data);
+    Swal.fire({
+      title: "Mail copiado con exito",
+      icon: "success",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+  });
+
+  function copyToClipboard(data: string) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard
+        .writeText(data)
+        .then(() => {
+          console.log("Text copied to clipboard");
+        })
+        .catch((err) => {
+          console.error("Could not copy text: ", err);
+        });
+    } else {
+      // Fallback for older browsers
+      const mailCopied = document.createElement("input");
+      mailCopied.setAttribute("value", data);
+      document.body.appendChild(mailCopied);
+      mailCopied.select();
+      document.execCommand("copy");
+      document.body.removeChild(mailCopied);
+    }
+  }
+</script>

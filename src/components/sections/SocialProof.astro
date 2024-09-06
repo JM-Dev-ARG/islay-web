@@ -1,0 +1,47 @@
+---
+import Carrousel from "../elements/Carrousel.astro";
+import Container from "../elements/Container.astro";
+import Title from "../elements/Title.astro";
+import data from "../../utils/data/social.json";
+import CardSocialProof from "../elements/CardSocialProof.astro";
+---
+
+<section
+  id="clientes"
+  class="py-14 bg-[#e4e3e0] mt-14"
+>
+  <Container>
+    <div class="grid place-items-center mx-auto">
+      <div class="w-full">
+        <!-- <Title
+          animate1={true}
+          animate2={true}
+          className="text-center  w-full grid place-items-center "
+          classTitle="w-full md:w-[60%] 2xl:w-[40%] lg:leading-[3.4rem]"
+          classTitle2="w-full md:w-[90%] 2xl:w-[60%] lg:leading-[4.3rem] text-4xl md:text-5xl lg:text-7xl"
+          title1="No nos gusta hablar sobre nosotros."
+          title2="Pero nos encanta que nuestro clientes lo hagan."
+        />
+      </div> -->
+        <div
+          class="overflow-hidden mt-6 w-full lg:w-auto"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          <Carrousel
+            duration="slow"
+            className="md:my-8 my-6"
+            classSlider="gap-4"
+          >
+            {
+              data.map((item) => {
+                return <CardSocialProof {...item} />;
+              })
+            }
+          </Carrousel>
+        </div>
+      </div>
+    </div>
+  </Container>
+</section>

@@ -1,0 +1,102 @@
+---
+import MailSVG from "../svgComponents/MailSVG.astro";
+
+type Props = {
+  name: string;
+  rol: string;
+  image: string;
+  image2: string;
+  description: string;
+  urlLinkedin: string;
+  email: string;
+  reverse?: boolean;
+};
+
+const { name, rol, image, image2, description, urlLinkedin, email, reverse } =
+  Astro.props;
+---
+
+<div
+  class=`w-[70%] flex justify-around  items-center ${reverse ? 'flex-row-reverse' : 'flex-row'}  p-10 gap-32 mb-10 last:mb-0 `
+>
+  <div
+    class=`relative img__after `
+    style={`--image-url: url(${image2})`}
+  >
+    <img
+      src={image}
+      alt="Imagen de Sal & Silvetti Asesores de Seguros"
+      class=`w-[400px] h-[600px] relative z-10 object-cover`
+    />
+  </div>
+  <div class="flex flex-col w-[60%] px-6">
+    <h4 class="text-4xl mb-1">{name}</h4>
+    <h5 class="text-[#c2cda5] cormorant text-2xl mb-1">{rol}</h5>
+    <p class="text-xl text-pretty mb-5">{description}</p>
+    <span class="w-full flex justify-end items-center gap-4">
+      <a
+        href=`mailto:${email}`
+        aria-label="Link para copiar el mail de Sal & Silvetti Asesores de Seguros"
+        id="mail"
+        class="transition hover:scale-150"
+      >
+        <MailSVG
+          currenteColor="#c2cda5"
+          width="30"
+          height="30"
+        />
+      </a>
+      <a
+        aria-label="Link al Linkedin de Ricardo Pablo Pesce Hijos Asesores de Seguros"
+        href={urlLinkedin}
+        target="_blank"
+        class="transition stroke-[#c2cda5] hover:scale-150"
+      >
+        <svg
+          class="icon icon-tabler icon-tabler-brand-linkedin"
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+          stroke-width="1.8"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <>
+            <path
+              stroke="none"
+              d="M0 0h24v24H0z"
+              fill="none"
+            ></path>
+            <path
+              d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+            ></path>
+            <path d="M8 11l0 5"></path>
+            <path d="M8 8l0 .01"></path>
+            <path d="M12 16l0 -5"></path>
+            <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+          </>
+        </svg>
+      </a>
+    </span>
+  </div>
+</div>
+
+<style>
+  .img__after::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: var(--image-url);
+    background-size: cover;
+    filter: blur(2px);
+    top: -10%;
+    right: -16%;
+    z-index: 1;
+  }
+
+  .cormorant {
+    font-family: "Cormorant Garamond", serif;
+  }
+</style>

@@ -1,0 +1,28 @@
+---
+type Props = {
+  width?: string;
+  height?: string;
+  currenteColor?: string;
+  className?: string;
+};
+
+const { width, height, currenteColor, className } = Astro.props;
+---
+
+<svg
+  id="closeSVG"
+  width={width ? width : "24"}
+  height={height ? height : "24"}
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke={currenteColor ? currenteColor : "black"}
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class=`icon icon-tabler icons-tabler-outline icon-tabler-x ${className}`
+  ><path
+    stroke="none"
+    d="M0 0h24v24H0z"
+    fill="none"
+  ></path><path d="M18 6l-12 12"></path><path d="M6 6l12 12"></path></svg
+>

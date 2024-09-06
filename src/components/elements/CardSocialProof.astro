@@ -1,0 +1,42 @@
+---
+type Props = {
+  img?: string;
+  text: string;
+  name: string;
+  rol: string;
+  logo?: string;
+  company?: string;
+};
+
+const { img, text, name, rol, logo, company } = Astro.props;
+---
+
+<div
+  class="w-[350px] sm:w-[600px] rounded-3xl border-2 border-[#5f5e5e] h-[400px] bg-gray-100 px-4 py-8 shadow-sm shadow-gray-500 m-2"
+>
+  <div class="grid place-items-center gap-4">
+    <div class="w-[100px] sm:w-[120px] rounded-full">
+      <img
+        class="rounded-full"
+        src={img ? img : "/img/avatar.avif"}
+        alt=`${name} imagen`
+      />
+    </div>
+    <div class="text-center text-pretty text-base sm:text-lg">
+      <p>{text}</p>
+    </div>
+    <div class="text-center text-pretty text-lg">
+      <p><strong>{name}</strong>, {rol}</p>
+    </div>
+    <div
+      class=`gap-4 ${company?"flex":"hidden"} justify-center items-center text-center text-pretty text-base sm:text-lg`
+    >
+      <img
+        class="w-[40px] sm:w-[50px] rounded-full"
+        src={logo ? logo : ""}
+        alt=`${company} logo`
+      />
+      <p>{company}</p>
+    </div>
+  </div>
+</div>

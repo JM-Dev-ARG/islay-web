@@ -1,0 +1,13 @@
+---
+export interface Props {
+  className?: string;
+}
+
+const { className } = Astro.props;
+---
+
+<div
+  class=`max-w-screen-3xl mx-auto px-6 md:px-14 xl:px-14 ${className} contain-inline-size`
+>
+  <slot />
+</div>

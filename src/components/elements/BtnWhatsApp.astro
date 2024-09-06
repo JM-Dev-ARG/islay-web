@@ -1,0 +1,66 @@
+---
+import { Image } from "astro:assets";
+import img from "../../../public/logos/whatsapp.avif";
+---
+
+<span class="hidden w-full md:fixed md:flex justify-end pr-4 bottom-3 z-10">
+  <a
+    aria-label="Link para mensaje directo al Wathsapp de RPP"
+    class="border-none outline-none cursor-pointer"
+    href="https://wa.me/5493815509173?text=Hola, quiero hacerles una consulta"
+    target="_blank"
+  >
+    <Image
+      id="whatsapp"
+      src={img}
+      alt="whatsapp"
+      class="md:size-10 lg:size-14 animation"
+    />
+  </a></span
+>
+
+<style>
+  /* animacion con css y scroll */
+  /*   .animation {
+    opacity: 1;
+    scale: 1;
+    animation-timeline: view();
+    animation-range: 4000px 4700px;
+    animation-fill-mode: both;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    animation-name: vanish;
+  }
+
+  @keyframes vanish {
+    to {
+      opacity: 0;
+      scale: 0;
+      display: none;
+    }
+  } */
+
+  .animation {
+    opacity: 1;
+    transition:
+      opacity 0.8s ease-in-out,
+      transform 0.8s ease-in-out;
+  }
+
+  .hide {
+    opacity: 0;
+    transform: scale(0);
+  }
+</style>
+
+<script>
+  const whatsapp = document.getElementById("whatsapp") as HTMLImageElement;
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    if (scrollTop > 3250) {
+      whatsapp.classList.add("hide");
+    } else {
+      whatsapp.classList.remove("hide");
+    }
+  });
+</script>

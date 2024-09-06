@@ -1,0 +1,82 @@
+---
+import About from "../components/sections/About.astro";
+import Beneficts from "../components/sections/Beneficts.astro";
+import Footer from "../components/sections/Footer.astro";
+import Hero from "../components/sections/Hero.astro";
+import NavBar from "../components/sections/NavBar.astro";
+import Services from "../components/sections/Services.astro";
+import SocialProof from "../components/sections/SocialProof.astro";
+import Divide from "../components/elements/Divide.astro";
+import Layout from "../layouts/Layout.astro";
+import BtnWhatsApp from "../components/elements/BtnWhatsApp.astro";
+---
+
+<Layout title="Islay">
+  <header>
+    <NavBar />
+    <Hero />
+  </header>
+  <!--  <Divide className="w-[80%]" /> -->
+  <div class="background">
+    <main>
+      <About />
+      <Services />
+      <!-- 
+    <Divide className="w-[80%]" />
+    
+    <Beneficts />
+    <SocialProof /> -->
+    </main>
+    <footer>
+      <BtnWhatsApp />
+      <Footer />
+    </footer>
+  </div>
+</Layout>
+
+<style>
+  .background {
+    background-image: linear-gradient(
+      180deg,
+      rgba(29, 29, 27, 0.87) 10%,
+      #3a3e32 60%,
+      #878f74 90%,
+      #c2cda5 100%
+    );
+  }
+</style>
+
+<script>
+  import Swal from "sweetalert2";
+  import AOS from "aos";
+  import "aos/dist/aos.css";
+
+  // verificar viewport
+  const isMobile = window.matchMedia("(max-width: 430px)").matches;
+
+  window.onload = function () {
+    const message = localStorage.getItem("message");
+    if (message === "true") {
+      saludo();
+      localStorage.removeItem("message");
+    }
+  };
+  function saludo() {
+    isMobile
+      ? Swal.fire({
+          width: 300,
+          title: "Gracias por contactarnos",
+          text: "En breve nos estaremos comunicando con vos",
+          showConfirmButton: false,
+          timer: 5000,
+        })
+      : Swal.fire({
+          title: "Gracias por contactarnos",
+          text: "En breve nos estaremos comunicando con vos",
+          showConfirmButton: false,
+          timer: 5000,
+        });
+  }
+
+  AOS.init();
+</script>

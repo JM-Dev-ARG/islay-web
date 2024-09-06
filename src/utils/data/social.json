@@ -1,0 +1,49 @@
+[
+    {
+        "img": "./mockImg/foto-social.avif",
+        "text": "Lorem ipsum dolor sit amet consectet adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "name": "Lorem ipsum",
+        "rol": "Lorem ipsum",
+        "logo": "./mockImg/logo.avif",
+        "company": "Lorem ipsum"
+    },
+    {
+        "img": "./mockImg/foto-social.avif",
+        "text": "Lorem ipsum dolor sit amet consectet adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "name": "Lorem ipsum",
+        "rol": "Lorem ipsum",
+        "logo": "./mockImg/logo.avif",
+        "company": "Lorem ipsum"
+    },
+    {
+        "text": "Lorem ipsum dolor sit amet consectet adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "name": "Lorem ipsum",
+        "rol": "Lorem ipsum"
+    },
+    {
+        "img": "./mockImg/foto-social.avif",
+        "text": "Lorem ipsum dolor sit amet consectet adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "name": "Lorem ipsum",
+        "rol": "Lorem ipsum",
+        "logo": "./mockImg/logo.avif",
+        "company": "Lorem ipsum"
+    },
+    {
+        "text": "Lorem ipsum dolor sit amet consectet adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "name": "Lorem ipsum",
+        "rol": "Lorem ipsum"
+    },
+    {
+        "img": "./mockImg/foto-social.avif",
+        "text": "Lorem ipsum dolor sit amet consectet adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "name": "Lorem ipsum",
+        "rol": "Lorem ipsum",
+        "logo": "./mockImg/logo.avif",
+        "company": "Lorem ipsum"
+    },
+    {
+        "text": "Lorem ipsum dolor sit amet consectet adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "name": "Lorem ipsum",
+        "rol": "Lorem ipsum"
+    }
+]

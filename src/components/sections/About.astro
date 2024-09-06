@@ -1,0 +1,119 @@
+---
+import Container from "../elements/Container.astro";
+import Title from "../elements/Title.astro";
+import imgAbout from "../../../public/img/about.avif";
+import { Image } from "astro:assets";
+import TeamCard from "../elements/TeamCard.astro";
+const user = [
+  {
+    name: "Ricardo Perez",
+    rol: "Asesor de Seguros",
+    image: "../../public/mockImg/foto-social.avif",
+    image2: "../../public/img/familia.avif",
+    urlLinkedin:
+      "https://www.linkedin.com/in/ricardo-pesce-hijos-asesores-de-seguros-4a9b5b1b0/",
+    email: "zVJtA@example.com",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus.",
+  },
+  {
+    name: "Ricardo Perez",
+    rol: "Asesor de Seguros",
+    image: "../../public/mockImg/foto-social.avif",
+    image2: "../../public/img/familia.avif",
+    urlLinkedin:
+      "https://www.linkedin.com/in/ricardo-pesce-hijos-asesores-de-seguros-4a9b5b1b0/",
+    email: "zVJtA@example.com",
+    reverse: true,
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus.",
+  },
+  {
+    name: "Ricardo Perez",
+    rol: "Asesor de Seguros",
+    image: "../../public/mockImg/foto-social.avif",
+    image2: "../../public/img/familia.avif",
+    urlLinkedin:
+      "https://www.linkedin.com/in/ricardo-pesce-hijos-asesores-de-seguros-4a9b5b1b0/",
+    email: "zVJtA@example.com",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus.",
+  },
+];
+
+const texto =
+  "lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modilorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modilorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi";
+---
+
+<section
+  class="mb-14 mt-24 overflow-hidden"
+  id="nosotros"
+>
+  <Container>
+    <div class="w-full grid place-items-center">
+      <div>
+        <Title title1="Sobre Nosotros" />
+      </div>
+
+      <div
+        class="relative w-full flex justify-center items-center -right-[15%] img__relative"
+        data-aos="fade-right"
+        data-aos-duration="2000"
+        data-aos-once="true"
+        data-aos-offset="300"
+      >
+        <figure class="w-[85%]">
+          <Image
+            class="object-cover aspect-video w-full h-full"
+            src={imgAbout}
+            alt="Imagen Islay"
+          />
+        </figure>
+        <div
+          class="absolute -bottom-[10%] -left-[10%] grid place-items-center w-[30%] back"
+        >
+          <p class="p-5 text-white text-pretty">{texto}</p>
+        </div>
+      </div>
+
+      <div class="w-full grid place-items-center">
+        <div class="mt-40">
+          <Title title1="El Equipo" />
+        </div>
+        <div class="w-full grid place-items-center background relative z-10">
+          <div class="absolute w-[80%] -z-10 invert opacity-20">
+            <img
+              class="w-full"
+              src="/logos/logo.svg"
+              alt="Logo Sal & Silvetti Asesores de Seguros"
+            />
+          </div>
+          {user.map((item) => <TeamCard {...item} />)}
+        </div>
+      </div>
+    </div>
+  </Container>
+</section>
+
+<style>
+  .back {
+    z-index: 2;
+    background: rgba(77, 77, 77, 0.623);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 2px;
+  }
+  .img__relative::before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    width: 25%;
+    aspect-ratio: 1;
+    top: 17%;
+    left: 0%;
+    background: rgba(119, 119, 119, 0.541);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 2px;
+  }
+</style>

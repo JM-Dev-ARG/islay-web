@@ -1,0 +1,252 @@
+---
+import Title from "./Title.astro";
+
+type Props = {
+  id: number;
+  title: string;
+  title2: string;
+  short_description: string;
+  long_description: string;
+  icon: string;
+  urlContactoWhatsapp?: string;
+  reverse?: boolean;
+  cardColorBackground?: string;
+  colorIconbackground?: string;
+};
+
+const {
+  id,
+  title,
+  title2,
+  short_description,
+  icon,
+  reverse,
+  cardColorBackground,
+  colorIconbackground,
+  urlContactoWhatsapp,
+} = Astro.props;
+---
+
+<div
+  class="card__service__mobile group h-[500px] shadow-md"
+  style={`background:${cardColorBackground}`}
+>
+  <div
+    class=`card__content ${reverse===true?"flex-col-reverse":"flex-col"} p-5`
+  >
+    <div class="title">
+      <div>
+        <Title
+          className=" text-[54px] "
+          title1={title}
+          title2={title2}
+        />
+      </div>
+      <div class="button__container">
+        <a
+          href={urlContactoWhatsapp}
+          target="_blank"
+          class="card__button cursor-pointer z-10"
+          style={`background:${colorIconbackground}`}
+        >
+          {
+            title2 === "Seguros" || title2 === "Vida" ? (
+              <button class="text-sm lg:text-xl 2xl:text-2xl text-[#262727]">
+                Conocer más
+              </button>
+            ) : (
+              <button class="text-sm lg:text-xl 2xl:text-2xl text-white">
+                Conocer más
+              </button>
+            )
+          }
+        </a>
+      </div>
+    </div>
+    <div class="description">
+      <div class="description__container__top">
+        <div
+          class=`card__image__container`
+          style={`background:${colorIconbackground}`}
+        >
+          <img
+            class="card__image w-[70px] lg:w-[70px] 2xl:w-[80px]"
+            src={icon}
+            alt=`Icono ${title} ${title2}`
+          />
+        </div>
+        <div>
+          <p class="card__number">0{id}</p>
+        </div>
+      </div>
+
+      <p class="card__description__not__hover leading-normal">
+        {short_description}
+      </p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .card__service__mobile {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    flex: 1;
+    color: #262727;
+    border-radius: 24px;
+    transition: 1s ease 0.8s;
+  }
+
+  .card__content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 3rem;
+    transition:
+      flex-direction 0.8s ease 0.8s allow-discrete,
+      opacity 0.8s ease 0.8s;
+  }
+
+  .title {
+    opacity: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    transition: 0.3s;
+  }
+
+  .title__not__hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    padding-inline: 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-align: center;
+    color: #262727;
+    transition: 0.3s ease 0.8s;
+  }
+
+  .card__number__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3.5px solid #262727;
+    border-radius: 40px;
+    padding-inline: 2.3rem;
+    padding-block: 0.4rem;
+    font-weight: bolder;
+    color: #262727;
+    transition: 0.8s ease 0.8s;
+  }
+
+  .button__container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+
+  .description {
+    scale: 1;
+    opacity: 1;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+    transition: 0.3s ease;
+
+    & .description__container__top {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      width: 100%;
+      transition:
+        0.3s,
+        display 0.3s allow-discrete;
+
+      & .card__image__container {
+        display: flex;
+        width: fit-content;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+
+        transition:
+          0.3s,
+          display 0.3s allow-discrete;
+        & .card__image {
+          filter: invert(100%);
+          transition:
+            0.3s,
+            display 0.3s allow-discrete;
+        }
+      }
+
+      & .card__number {
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3.5px solid #262727;
+        border-radius: 40px;
+        padding-inline: 1.7rem;
+        padding-block: 0.4rem;
+        font-weight: bolder;
+        transition:
+          0.3s,
+          display 0.3s allow-discrete;
+      }
+    }
+
+    & .card__description__not__hover {
+      scale: 1;
+      opacity: 1;
+      height: fit-content;
+      text-wrap: pretty;
+      font-size: large;
+      font-weight: 600;
+      transition:
+        0.3s,
+        display 0.3s allow-discrete;
+    }
+
+    & .card__description__hover {
+      scale: 0;
+      opacity: 0;
+      height: 0;
+      width: 100%;
+      text-wrap: pretty;
+      font-weight: 600;
+      transition:
+        0.3s,
+        display 0.3s allow-discrete;
+    }
+  }
+</style>
