@@ -4,7 +4,7 @@
         "title": "Hogar",
         "short_description": "Lorem ipsum dolor sit amet consectet adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "long_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea. Lorem ipsum dolor sit amet consectetur adipisicing elit.Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.Repudiandae modi nesciunt minus corrupti voluptates error, eaLorem ipsum dolor sit amet consectetur adipisicing elit.Repudiandae modi nesciunt minus corrupti voluptates error, ea",
-        "cardBackground": "../../../public/img/casa.avif",
+        "cardBackground": "./img/casa.avif",
         "urlContactoWhatsapp": "https://wa.me/5493815509173?text=Hola, quiero saber mas sobre las soluciones financieras"
     },
     {
@@ -12,7 +12,7 @@
         "title": "Automotores",
         "short_description": "Lorem ipsum dolor sit amet consectet adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "long_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea. Lorem ipsum dolor sit amet consectetur adipisicing elit.Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.Repudiandae modi nesciunt minus corrupti voluptates error, eaLorem ipsum dolor sit amet consectetur adipisicing elit.Repudiandae modi nesciunt minus corrupti voluptates error, ea",
-        "cardBackground": "../../../public/img/auto.avif",
+        "cardBackground": "./img/auto.avif",
         "urlContactoWhatsapp": "https://wa.me/5493815509173?text=Hola, quiero saber mas sobre las soluciones de salud"
     },
     {
@@ -20,7 +20,7 @@
         "title": "Personas",
         "short_description": "Lorem ipsum dolor sit amet consectet adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "long_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea. Lorem ipsum dolor sit amet consectetur adipisicing elit.Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.Repudiandae modi nesciunt minus corrupti voluptates error, eaLorem ipsum dolor sit amet consectetur adipisicing elit.Repudiandae modi nesciunt minus corrupti voluptates error, ea",
-        "cardBackground": "../../../public/img/familia.avif",
+        "cardBackground": "./img/familia.avif",
         "urlContactoWhatsapp": "https://wa.me/5493815509173?text=Hola, quiero saber mas sobre las soluciones de vida"
     },
     {
@@ -28,7 +28,7 @@
         "title": "Personas",
         "short_description": "Lorem ipsum dolor sit amet consectet adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "long_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea. Lorem ipsum dolor sit amet consectetur adipisicing elit.Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.Repudiandae modi nesciunt minus corrupti voluptates error, eaLorem ipsum dolor sit amet consectetur adipisicing elit.Repudiandae modi nesciunt minus corrupti voluptates error, ea",
-        "cardBackground": "../../../public/img/familia.avif",
+        "cardBackground": "./img/familia.avif",
         "urlContactoWhatsapp": "https://wa.me/5493815509173?text=Hola, quiero saber mas sobre las soluciones de vida"
     }
 ]
