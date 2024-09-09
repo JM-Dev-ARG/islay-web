@@ -11,7 +11,7 @@ const navLinks = [
 
 <nav
   id="navbar"
-  class="w-full grid place-items-center fixed z-[100] transition-all duration-500 -translate-y-24"
+  class="w-full grid place-items-center fixed z-[100] transition-all duration-500"
 >
   <div
     class="flex items-center justify-between lg:justify-center w-full max-w-screen-xl mx-auto lg:px-3 2xl:px-0"
@@ -22,7 +22,7 @@ const navLinks = [
         class="flex items-center gap-3 z-10"
       >
         <img
-          class="w-[120px] xl:w-[170px]"
+          class="w-[120px]"
           src="/logos/logo_salsilvetti.avif"
           alt="Logo Sal & Silvetti Asesores de Seguros"
         />
@@ -172,10 +172,12 @@ const navLinks = [
   const navBar = document.getElementById("navbar");
   const btnMovil = document.getElementById("btn-contacto-movil");
 
-  let lastScrollTop = 0;
+  let lastScrollTop = 1;
 
   window.addEventListener("scroll", () => {
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    console.log(scrollTop);
+    console.log(lastScrollTop);
 
     if (scrollTop > lastScrollTop) {
       navBar.classList.add("-translate-y-24");

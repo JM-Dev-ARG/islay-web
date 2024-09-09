@@ -18,7 +18,7 @@ const {
 ---
 
 <div
-  class="card__service group h-[550px] lg:h-[550px] xl:h-[600px] 2xl:h-[620px] shadow-md bg-center bg-fill bg-no-repeat"
+  class="card__service group h-[550px] lg:h-[550px] xl:h-[550px] 2xl:h-[620px] shadow-md bg-center lg:bg-top bg-fill bg-no-repeat"
   style={`--card-background: url(${cardBackground})`}
 >
   <div class="title__not__hover text-[50px] lg:text-[70px]">
@@ -28,15 +28,14 @@ const {
   </div>
   <div class="card__content flex-col p-5">
     <div
-      class=`title z-10 text-[50px] 2xl:text-6xl group-hover:font-black group-hover:text-[70px] 2xl:group-hover:text-[80px] delay-1000 `
+      class=`title z-10 group-hover:font-black group-hover:text-[50px] 2xl:group-hover:text-[70px] transition-all  delay-1000 `
     >
-      <div
-        class=`${title==="Automotores"?"group-hover:mx-0":"group-hover:mx-6"} delay-[1100ms]`
+      <p
+        style={`${title === "Automotores" ? "--margin:0px" : "--margin:24px"}`}
       >
-        <p class="">
-          {title}
-        </p>
-      </div>
+        {title}
+      </p>
+
       <div class="button__container">
         <a
           href={urlContactoWhatsapp}
@@ -71,6 +70,7 @@ const {
   .card__service::before {
     content: "";
     position: absolute;
+    flex: 1;
     top: 0;
     left: 0;
     width: 100%;
@@ -100,24 +100,60 @@ const {
     justify-content: end;
     align-items: center;
     transition:
-      flex-direction 0.8s ease 0.8s allow-discrete,
       opacity 0.8s ease 0.8s,
+      flex-direction 0.8s ease 0.8s allow-discrete,
       gap 0.8s ease 0.8s allow-discrete;
   }
 
   .card__service:hover .card__content {
-    gap: 2rem;
-    flex-direction: row;
+    /*  gap: 2rem;
+    flex-direction: row; */
+
+    animation: cardContentAnimationHover 1.6s ease 0.5s forwards;
   }
+
+  @keyframes cardContentAnimationHover {
+    25% {
+      opacity: 0;
+    }
+    50% {
+      gap: 2rem;
+      flex-direction: row;
+    }
+    100% {
+      opacity: 1;
+      gap: 2rem;
+      flex-direction: row;
+    }
+  }
+
+  @keyframes cardContentAnimationNotHover {
+    25% {
+      opacity: 0;
+    }
+    50% {
+      gap: 2rem;
+      flex-direction: row;
+    }
+    100% {
+      opacity: 1;
+      gap: 2rem;
+      flex-direction: row;
+    }
+  }
+
   .title {
     opacity: 1;
+    font-size: clamp(24px, 3vw, 60px);
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: end;
     gap: 1rem;
     color: #e7e7e7;
+
+    & p {
+      margin: 0;
+    }
   }
   .card__service:hover .card__content .title {
     animation: animationTitleHover 1.6s ease 0.5s forwards;
@@ -131,16 +167,22 @@ const {
     0% {
       opacity: 1;
       gap: 1rem;
+      justify-content: start;
+      align-items: start;
     }
 
     50% {
+      /*  scale: 0; */
       opacity: 0;
+      width: auto;
       gap: 1rem;
+      justify-content: start;
+      align-items: start;
     }
 
     100% {
+      scale: 1;
       width: auto;
-
       text-shadow: #1d1d1b 6px 3px 10px;
       gap: 3rem;
       opacity: 1;
@@ -151,12 +193,56 @@ const {
 
   @keyframes animationTitleNotHover {
     0% {
+      width: auto;
+      text-shadow: #1d1d1b 6px 3px 10px;
+      gap: 3rem;
+      opacity: 1;
+      justify-content: center;
+      align-items: center;
+      scale: 0;
+    }
+
+    50% {
       opacity: 0;
     }
 
     100% {
       opacity: 1;
-      grap: 1rem;
+    }
+  }
+
+  .card__service:hover .card__content .title p {
+    animation: animationPHover 0.8s ease 0.5s forwards;
+  }
+
+  .card__service:not(:hover) .card__content .title p {
+    animation: animationPNotHover 0.6s ease 1s both;
+  }
+
+  @keyframes animationPHover {
+    0% {
+      opacity: 1;
+      margin-inline: 0;
+    }
+
+    90% {
+      opacity: 0;
+      margin-inline: 0;
+    }
+
+    100% {
+      opacity: 1;
+      margin-inline: var(--margin);
+    }
+  }
+
+  @keyframes animationPNotHover {
+    0% {
+      margin-inline: var(--margin);
+    }
+
+    100% {
+      margin-inline: 0;
     }
   }
 
