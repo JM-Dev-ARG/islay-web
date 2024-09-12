@@ -16,13 +16,13 @@ const navLinks = [
   <div
     class="flex items-center justify-between lg:justify-center w-full max-w-screen-xl mx-auto lg:px-3 2xl:px-0"
   >
-    <div class="lg:hidden flex justify-center items-center flex-1">
+    <div class="lg:hidden flex justify-center items-center ml-8">
       <a
         href="/#inicio"
         class="flex items-center gap-3 z-10"
       >
         <img
-          class="w-[120px]"
+          class="w-[70px] mt-1 mb-3"
           src="/logos/logo.svg"
           alt="Logo Islay Asesores de Seguros"
         />
@@ -101,7 +101,7 @@ const navLinks = [
         <img
           class="w-[70px]"
           src="/logos/logo.svg"
-          alt="Logo Sal & Silvetti Asesores de Seguros"
+          alt="Logo Islay Asesores de Seguros"
         />
       </a>
     </div>
@@ -126,7 +126,7 @@ const navLinks = [
         </button>
       </div>
 
-      <div class="flex justify-end items-center flex-1 lg:hidden mr-4">
+      <div class="flex justify-end items-center flex-1 lg:hidden mr-8">
         <label class="menu__toggle">
           <input
             type="checkbox"
@@ -176,8 +176,6 @@ const navLinks = [
 
   window.addEventListener("scroll", () => {
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
-    console.log(scrollTop);
-    console.log(lastScrollTop);
 
     if (scrollTop > lastScrollTop) {
       navBar.classList.add("-translate-y-24");

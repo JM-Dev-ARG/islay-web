@@ -56,23 +56,25 @@ const texto =
       </div>
 
       <div
-        class="relative w-full flex justify-center items-center lg:-right-[20%] 2xl:-right-[15%] img__relative"
+        class="relative w-full h-full flex justify-center items-center img__relative before:left-[30%] 2xl:before:left-[25%] before:top-[12%] 2xl:before:top-[11%]"
         data-aos="fade-right"
         data-aos-duration="2000"
         data-aos-once="true"
         data-aos-offset="300"
       >
-        <figure class="w-[85%]">
+        <div class="relative w-full h-[43.75rem]">
           <Image
-            class="object-cover aspect-video w-full h-full"
+            class="relative -right-[15%] 2xl:-right-[22%] object-contain aspect-video w-full h-full object-top"
             src={imgAbout}
             alt="Imagen Islay"
           />
-        </figure>
-        <div
-          class="absolute lg:-bottom-[20%] 2xl:-bottom-[10%] lg:-left-[25%] 2xl:-left-[10%] grid place-items-center lg:w-[50%] 2xl:w-[30%] back"
-        >
-          <p class="p-5 text-white text-pretty">{texto}</p>
+          <div
+            class="absolute top-[20%] -left-0 grid place-items-center md:w-[60%] lg:w-[50%] 2xl:w-[45%] h-[90%] back"
+          >
+            <p class="p-5 text-white text-pretty text-[clamp(16px,1vw,18px)]">
+              {texto}
+            </p>
+          </div>
         </div>
       </div>
 
@@ -109,9 +111,10 @@ const texto =
     position: absolute;
     width: 25%;
     aspect-ratio: 1;
-    top: 17%;
-    left: 0%;
+    /* top: 12%; */
+    /*  left: 25%; */
     background: rgba(119, 119, 119, 0.541);
+    filter: blur(2px);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 2px;

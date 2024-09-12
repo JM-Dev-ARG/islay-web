@@ -1,37 +1,29 @@
 ---
-import Title from "./Title.astro";
-
 type Props = {
-  id: number;
   title: string;
-  title2: string;
   short_description: string;
   long_description: string;
-  icon: string;
+
   urlContactoWhatsapp?: string;
-  reverse?: boolean;
-  cardColorBackground?: string;
-  colorIconbackground?: string;
+  cardBackground?: string;
 };
 
 const {
-  id,
   title,
-  title2,
   short_description,
-  icon,
-  reverse,
-  cardColorBackground,
-  colorIconbackground,
+  long_description,
+  cardBackground,
   urlContactoWhatsapp,
 } = Astro.props;
 ---
 
-<div
-  class="card__service__mobile group h-[500px] shadow-md"
-  style={`background:${cardColorBackground}`}
->
-  <div
+<div class="card__service__mobile group h-[500px] shadow-md">
+  <img
+    src={cardBackground}
+    alt=`Imagen de ${title}`
+    class="relative w-full h-[115%] object-cover object-center -z-10"
+  />
+  <!--   <div
     class=`card__content ${reverse===true?"flex-col-reverse":"flex-col"} p-5`
   >
     <div class="title">
@@ -84,7 +76,7 @@ const {
         {short_description}
       </p>
     </div>
-  </div>
+  </div> -->
 </div>
 
 <style>
