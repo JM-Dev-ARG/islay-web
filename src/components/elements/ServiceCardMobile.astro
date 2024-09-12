@@ -17,12 +17,58 @@ const {
 } = Astro.props;
 ---
 
-<div class="card__service__mobile group h-[500px] shadow-md">
+<div class="card__service__mobile h-[500px] shadow-md">
   <img
     src={cardBackground}
     alt=`Imagen de ${title}`
-    class="relative w-full h-[115%] object-cover object-center -z-10"
+    class="relative w-full h-full object-cover object-center -z-10"
   />
+  <div class="content__container">
+    <div class="card__init__container opacity-100 z-10">
+      <div class="title__on__hover font-black text-[50px] 2xl:text-[70px]">
+        <p>
+          {title}
+        </p>
+        <p class="card__description__not__hover leading-normal text-base">
+          {short_description}
+        </p>
+        <a
+          href={urlContactoWhatsapp}
+          target="_blank"
+          class="card__button cursor-pointer text-[#3A3E32] bg-[#D4DCC0] hover:bg-[#3A3E32] hover:text-[#D4DCC0] transition-all duration-700 ease-linear"
+        >
+          <button class="text-sm lg:text-xl 2xl:text-2xl"> Conocer más </button>
+        </a>
+      </div>
+    </div>
+
+    <!--    <div class="card__on__hover__container z-10">
+      <div class="title__on__hover__container">
+        <div class=`title__on__hover  font-black text-[50px] 2xl:text-[70px]`>
+          <p
+            style={`${title === "Automotores" ? "--margin:0px" : "--margin:24px"}`}
+          >
+            {title}
+          </p>
+
+          <a
+            href={urlContactoWhatsapp}
+            target="_blank"
+            class="card__button cursor-pointer text-[#3A3E32] bg-[#D4DCC0] hover:bg-[#3A3E32] hover:text-[#D4DCC0] transition-all duration-700 ease-linear"
+          >
+            <button class="text-sm lg:text-xl 2xl:text-2xl">
+              Conocer más
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="description__on__hover__container">
+        <p>
+          {long_description}
+        </p>
+      </div>
+    </div> -->
+  </div>
   <!--   <div
     class=`card__content ${reverse===true?"flex-col-reverse":"flex-col"} p-5`
   >
@@ -84,161 +130,55 @@ const {
     width: 100%;
     overflow: hidden;
     position: relative;
+    border-radius: 2px;
+  }
+  .card__service__mobile::before {
+    content: "";
+    position: absolute;
     flex: 1;
-    color: #262727;
-    border-radius: 24px;
-    transition: 1s ease 0.8s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #262727;
+    opacity: 0.4;
   }
 
-  .card__content {
+  .content__container {
+    position: absolute;
+    padding: 1.25rem;
+    top: 0;
+    right: 0;
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: start;
-    align-items: center;
-    gap: 3rem;
-    transition:
-      flex-direction 0.8s ease 0.8s allow-discrete,
-      opacity 0.8s ease 0.8s;
+    align-items: end;
+    opacity: 1;
   }
 
-  .title {
-    opacity: 1;
-    width: 100%;
+  .title__on__hover {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
-    transition: 0.3s;
-  }
+    justify-content: center;
 
-  .title__not__hover {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    padding-inline: 2.5rem;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
+    gap: 1.5rem;
     width: 100%;
     height: 100%;
-    opacity: 0;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    text-align: center;
-    color: #262727;
-    transition: 0.3s ease 0.8s;
-  }
 
-  .card__number__title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 3.5px solid #262727;
-    border-radius: 40px;
-    padding-inline: 2.3rem;
-    padding-block: 0.4rem;
-    font-weight: bolder;
-    color: #262727;
-    transition: 0.8s ease 0.8s;
-  }
-
-  .button__container {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .card__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 40px;
-    padding-inline: 2rem;
-    padding-block: 1rem;
-    font-weight: bold;
-    transition: 0.3s ease;
-  }
-
-  .description {
-    scale: 1;
-    opacity: 1;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2.5rem;
-    transition: 0.3s ease;
-
-    & .description__container__top {
+    & p {
+      color: #e7e7e7;
+      text-shadow: #1d1d1b 6px 3px 10px;
+    }
+    & .card__button {
+      width: fit-content;
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
-      width: 100%;
-      transition:
-        0.3s,
-        display 0.3s allow-discrete;
-
-      & .card__image__container {
-        display: flex;
-        width: fit-content;
-        border-radius: 20px;
-        justify-content: center;
-        align-items: center;
-
-        transition:
-          0.3s,
-          display 0.3s allow-discrete;
-        & .card__image {
-          filter: invert(100%);
-          transition:
-            0.3s,
-            display 0.3s allow-discrete;
-        }
-      }
-
-      & .card__number {
-        width: fit-content;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 3.5px solid #262727;
-        border-radius: 40px;
-        padding-inline: 1.7rem;
-        padding-block: 0.4rem;
-        font-weight: bolder;
-        transition:
-          0.3s,
-          display 0.3s allow-discrete;
-      }
-    }
-
-    & .card__description__not__hover {
-      scale: 1;
-      opacity: 1;
-      height: fit-content;
-      text-wrap: pretty;
-      font-size: large;
+      align-self: flex-end;
+      flex-wrap: nowrap;
+      border-radius: 40px;
+      padding-inline: 2rem;
+      padding-block: 1rem;
       font-weight: 600;
-      transition:
-        0.3s,
-        display 0.3s allow-discrete;
-    }
-
-    & .card__description__hover {
-      scale: 0;
-      opacity: 0;
-      height: 0;
-      width: 100%;
-      text-wrap: pretty;
-      font-weight: 600;
-      transition:
-        0.3s,
-        display 0.3s allow-discrete;
     }
   }
 </style>

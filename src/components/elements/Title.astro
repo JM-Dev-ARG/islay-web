@@ -15,7 +15,7 @@ const { title1, offset, className } = Astro.props;
   data-aos-once="true"
   data-aos-offset={offset ? offset : "0"}
 >
-  <h3 class="text-7xl">
+  <h3 class="texto text-7">
     {title1}
   </h3>
 </div>
@@ -26,8 +26,8 @@ const { title1, offset, className } = Astro.props;
     position: absolute;
     aspect-ratio: 1/1;
     height: 100%;
-    top: 13px;
-    right: -8px;
+    top: 7px;
+    right: -10px;
     border-right: 2px solid #c2cda5;
     border-bottom: 2px solid #c2cda5;
     z-index: -1;
@@ -37,10 +37,14 @@ const { title1, offset, className } = Astro.props;
     position: absolute;
     aspect-ratio: 1/1;
     height: 100%;
-    top: 6px;
-    right: -15px;
+    top: 0px;
+    right: -17px;
     border-right: 2px solid #c2cda5;
     border-bottom: 2px solid #c2cda5;
     z-index: -1;
+  }
+
+  .texto {
+    font-size: clamp(40px, 5vw, 72px);
   }
 </style>

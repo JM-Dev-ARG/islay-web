@@ -25,17 +25,17 @@ export default function ModalMail() {
         >
 
             <div
-                className=" w-[90%] max-w-3xl lg:max-w-[1000px] rounded-3xl h-auto  bg-transparent  text-[#262727]"
+                className=" w-[90%] max-w-3xl lg:max-w-[1000px] rounded-3xl h-auto  bg-transparent  text-[#3A3E32]"
             >
 
                 <div
-                    className="flex flex-col  bg-[#adbcd1] gap-5 pt-2 pb-5 px-3  rounded-xl"
+                    className="flex flex-col  bg-[#D4DCC0] gap-5 pt-2 pb-5 px-3  rounded-xl"
                 >
 
                     <div className="w-full flex justify-end items-center">
                         <form method="dialog">
                             <button
-                                className="font-bold text-xl bg-[#adbcd1] hover:bg-[#adbcd1] border-0 border-none border-transparent shadow-none hover:text-red-500"
+                                className="font-bold text-xl bg-[#D4DCC0] hover:bg-[#D4DCC0] border-0 border-none border-transparent shadow-none hover:text-red-500"
                             >✕
                             </button>
                         </form>
@@ -196,10 +196,10 @@ export default function ModalMail() {
                                     selected
                                 >
                                     Motivo de contacto</option>
-                                <option aria-label="Líneas Personales">Solución Financiera</option>
-                                <option aria-label="Líneas Comerciales">Solución Salud</option>
-                                <option aria-label="Líneas Industriales">Solución Vida</option>
-                                <option aria-label="Líneas Agricolas">Solución Seguros</option>
+                                <option aria-label="Líneas Personales">Servicio 1</option>
+                                <option aria-label="Líneas Comerciales">Servicio 1</option>
+                                <option aria-label="Líneas Industriales">Servicio 1</option>
+                                <option aria-label="Líneas Agricolas">Servicio 1</option>
                                 <option aria-label="Otros">Otros</option>
                             </select>
 

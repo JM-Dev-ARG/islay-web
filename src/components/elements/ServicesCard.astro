@@ -17,9 +17,7 @@ const {
 } = Astro.props;
 ---
 
-<div
-  class="card__service group h-[550px] lg:h-[550px] xl:h-[550px] 2xl:h-[620px] shadow-md"
->
+<div class="card__service group h-[550px] 2xl:h-[620px] shadow-md">
   <img
     src={cardBackground}
     alt=`Imagen de ${title}`
@@ -39,6 +37,30 @@ const {
         </p>
         <p class="card__description__not__hover leading-normal text-base">
           {short_description}
+        </p>
+        <p
+          class="flex w-full justify-end align-center leading-normal text-base text-center gap-2"
+        >
+          Ver más <span class="w-3 grid place-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <defs
+                ><style>
+                  .cls-1 {
+                    stroke-width: 5px;
+                    stroke: #e7e7e7;
+                    fill: #e7e7e7;
+                  }
+                </style></defs
+              >
+              <path
+                class="cls-1"
+                d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"
+              ></path></svg
+            ></span
+          >
         </p>
       </div>
     </div>

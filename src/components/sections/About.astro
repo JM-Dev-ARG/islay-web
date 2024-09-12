@@ -4,6 +4,7 @@ import Title from "../elements/Title.astro";
 import imgAbout from "../../../public/img/about.avif";
 import { Image } from "astro:assets";
 import TeamCard from "../elements/TeamCard.astro";
+import TeamCardMovil from "../elements/TeamCardMovil.astro";
 const user = [
   {
     name: "Ricardo Perez",
@@ -90,7 +91,14 @@ const texto =
               alt="Logo Sal & Silvetti Asesores de Seguros"
             />
           </div>
-          {user.map((item) => <TeamCard {...item} />)}
+          <div class="hidden w-full md:grid place-items-center mx-auto">
+            {user.map((item) => <TeamCard {...item} />)}
+          </div>
+          <div
+            class="grid place-items-center mx-auto mb-6 gap-6 w-full md:hidden"
+          >
+            {user.map((item) => <TeamCardMovil {...item} />)}
+          </div>
         </div>
       </div>
     </div>

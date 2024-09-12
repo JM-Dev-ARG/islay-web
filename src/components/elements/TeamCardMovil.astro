@@ -1,0 +1,170 @@
+---
+import MailSVG from "../svgComponents/MailSVG.astro";
+type Props = {
+  className?: string;
+  name: string;
+  description: string;
+  image: string;
+  urlLinkedin: string;
+  email: string;
+};
+
+const { name, description, image, className, urlLinkedin, email } = Astro.props;
+---
+
+<div class=`group w-[300px] ${className}`>
+  <div class="card-box">
+    <div class="card">
+      <div class="content">
+        <p class="description">
+          {description}
+        </p>
+        <span class="w-full flex justify-end items-center gap-4">
+          <a
+            href=`mailto:${email}`
+            aria-label="Link para copiar el mail de Sal & Silvetti Asesores de Seguros"
+            id="mail"
+            class="transition hover:scale-150"
+          >
+            <MailSVG
+              currenteColor="#c2cda5"
+              width="30"
+              height="30"
+            />
+          </a>
+          <a
+            aria-label="Link al Linkedin de Ricardo Pablo Pesce Hijos Asesores de Seguros"
+            href={urlLinkedin}
+            target="_blank"
+            class="transition stroke-[#c2cda5] hover:scale-150"
+          >
+            <svg
+              class="icon icon-tabler icon-tabler-brand-linkedin"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              stroke-width="1.8"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <>
+                <path
+                  stroke="none"
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                ></path>
+                <path
+                  d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+                ></path>
+                <path d="M8 11l0 5"></path>
+                <path d="M8 8l0 .01"></path>
+                <path d="M12 16l0 -5"></path>
+                <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+              </>
+            </svg>
+          </a>
+        </span>
+      </div>
+      <div class="fotoContainer">
+        <div class="foto">
+          <img
+            src={image}
+            alt=`${name} foto`
+          />
+        </div>
+      </div>
+      <div class="detail">
+        <div class="title">
+          <p class="name">{name}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .card {
+    --card-width: 100%;
+    --text-color: hsl(0, 0%, 100%);
+    --transition: all 0.2s cubic-bezier(0.13, 0.78, 0.3, 0.99);
+    background: #000002;
+    font-size: 12px;
+    line-height: 2;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s ease-in;
+    border-radius: 0;
+  }
+  .detail {
+    width: 100%;
+    padding-inline: 1em;
+    color: var(--text-color);
+    transition: all 0.2s ease-in;
+  }
+  .name {
+    font-size: 1.7em;
+    font-weight: bold;
+  }
+
+  .matNumber {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5em 0;
+  }
+
+  .content {
+    color: var(--text-color);
+    width: var(--card-width);
+    position: absolute;
+    transform: rotate3D(0.4, 1, 0.4, 0deg) scale(0.4);
+    padding: 1em 2em;
+    opacity: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .description {
+    line-height: 1.5;
+    font-size: 1.3em;
+    font-weight: 300;
+  }
+
+  .fotoContainer {
+    width: 100%;
+    overflow: hidden;
+    transition: var(--transition);
+  }
+  .foto {
+    object-fit: cover;
+  }
+
+  .card:hover {
+    border-radius: 2px;
+    transform: scale(1.06);
+  }
+
+  .card:hover .fotoContainer {
+    opacity: 0.2;
+    filter: blur(20px);
+    transform: scale(1.5);
+  }
+  .card:hover .content {
+    transform: none;
+    opacity: 1;
+    transition: var(--transition);
+  }
+
+  .card:hover .detail {
+    opacity: 0;
+  }
+</style>
