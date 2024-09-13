@@ -43,7 +43,7 @@ const user = [
 ];
 
 const texto =
-  "lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modilorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modilorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi";
+  "lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modilorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modilorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. ";
 ---
 
 <section
@@ -57,7 +57,7 @@ const texto =
       </div>
 
       <div
-        class="relative w-full h-full flex justify-center items-center img__relative before:left-[30%] 2xl:before:left-[25%] before:top-[12%] 2xl:before:top-[11%]"
+        class="relative w-full h-full flex justify-center items-center img__relative 2xl:before:left-[25%] 2xl:before:top-[11%] before:hidden lg:before:block"
         data-aos="fade-right"
         data-aos-duration="2000"
         data-aos-once="true"
@@ -65,14 +65,14 @@ const texto =
       >
         <div class="relative w-full h-[43.75rem]">
           <Image
-            class="relative -right-[15%] 2xl:-right-[22%] object-contain aspect-video w-full h-full object-top"
+            class="relative right-0 md:-right-[15%] 2xl:-right-[22%] object-cover lg:object-contain aspect-video w-full h-full object-top"
             src={imgAbout}
             alt="Imagen Islay"
           />
           <div
-            class="absolute top-[20%] -left-0 grid place-items-center md:w-[60%] lg:w-[50%] 2xl:w-[45%] h-[90%] back"
+            class="absolute top-0 left-0 md:-top-14 md:-left-10 lg:top-[20%] lg:-left-0 grid place-items-center w-full md:w-[60%] h-auto lg:w-[50%] 2xl:w-[45%] lg:h-[90%] back backdrop-blur-[5px] md:backdrop-blur-[20px]"
           >
-            <p class="p-5 text-white text-pretty text-[clamp(16px,1vw,18px)]">
+            <p class="p-5 text-white text-pretty text-[clamp(16px,2vw,18px)]">
               {texto}
             </p>
           </div>
@@ -109,8 +109,6 @@ const texto =
   .back {
     z-index: 2;
     background: rgba(77, 77, 77, 0.623);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
     border-radius: 2px;
   }
   .img__relative::before {
@@ -119,8 +117,6 @@ const texto =
     position: absolute;
     width: 25%;
     aspect-ratio: 1;
-    /* top: 12%; */
-    /*  left: 25%; */
     background: rgba(119, 119, 119, 0.541);
     filter: blur(2px);
     backdrop-filter: blur(10px);
