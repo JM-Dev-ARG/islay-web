@@ -47,7 +47,7 @@ const texto =
 ---
 
 <section
-  class="mb-14 mt-24 overflow-hidden"
+  class="mb-14 mt-10 overflow-hidden"
   id="nosotros"
 >
   <Container>
@@ -57,30 +57,38 @@ const texto =
       </div>
 
       <div
-        class="relative w-full h-full flex justify-center items-center img__relative 2xl:before:left-[25%] 2xl:before:top-[11%] before:hidden lg:before:block"
+        class="relative w-full h-full flex justify-center items-center img__relative 2xl:before:left-[25%] 2xl:before:top-[11%] before:hidden lg:before:block mt-10"
         data-aos="fade-right"
         data-aos-duration="2000"
         data-aos-once="true"
         data-aos-offset="300"
       >
-        <div class="relative w-full h-[43.75rem]">
+        <div class="hidden md:block relative w-full h-[43.75rem]">
           <Image
             class="relative right-0 md:-right-[15%] 2xl:-right-[22%] object-cover lg:object-contain aspect-video w-full h-full object-top"
             src={imgAbout}
             alt="Imagen Islay"
           />
           <div
-            class="absolute top-0 left-0 md:-top-14 md:-left-10 lg:top-[20%] lg:-left-0 grid place-items-center w-full md:w-[60%] h-auto lg:w-[50%] 2xl:w-[45%] lg:h-[90%] back backdrop-blur-[5px] md:backdrop-blur-[20px]"
+            class="md:absolute top-0 left-0 md:-top-14 md:-left-10 lg:top-[20%] lg:-left-0 grid place-items-center w-full md:w-[60%] h-auto lg:w-[50%] 2xl:w-[45%] lg:h-[90%] back backdrop-blur-[5px] md:backdrop-blur-[20px]"
           >
             <p class="p-5 text-white text-pretty text-[clamp(16px,2vw,18px)]">
               {texto}
             </p>
           </div>
         </div>
+
+        <div
+          class="md:hidden relative top-0 left-0 md:-top-14 md:-left-10 lg:top-[20%] lg:-left-0 grid place-items-center w-full md:w-[60%] h-auto lg:w-[50%] 2xl:w-[45%] lg:h-[90%] back backdrop-blur-[5px] md:backdrop-blur-[20px]"
+        >
+          <p class="p-5 text-white text-pretty text-[clamp(16px,2vw,18px)]">
+            {texto}
+          </p>
+        </div>
       </div>
 
       <div class="w-full grid place-items-center">
-        <div class="mt-40">
+        <div class="mt-20 md:mt-40">
           <Title title1="El Equipo" />
         </div>
         <div class="w-full grid place-items-center background relative z-10">
