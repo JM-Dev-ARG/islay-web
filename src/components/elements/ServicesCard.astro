@@ -68,9 +68,7 @@ const {
     <div class="card__on__hover__container z-10">
       <div class="title__on__hover__container">
         <div class=`title__on__hover  font-black text-[50px] 2xl:text-[70px]`>
-          <p
-            style={`${title === "Automotores" ? "--margin:0px" : "--margin:24px"}`}
-          >
+          <p style={`${title.length > 10 ? "--margin:0px" : "--margin:24px"}`}>
             {title}
           </p>
 

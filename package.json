@@ -10,11 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/netlify": "^5.5.1",
-    "@astrojs/preact": "^3.5.2",
-    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/netlify": "^5.5.3",
+    "@astrojs/preact": "^3.5.3",
+    "@astrojs/tailwind": "^5.1.1",
     "aos": "^2.3.4",
-    "astro": "^4.15.2",
+    "astro": "^4.15.8",
     "daisyui": "^4.12.10",
     "nodemailer": "^6.9.14",
     "preact": "^10.23.2",
