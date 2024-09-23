@@ -5,7 +5,7 @@ import imgAbout from "../../../public/img/about.avif";
 import { Image } from "astro:assets";
 import TeamCard from "../elements/TeamCard.astro";
 import TeamCardMovil from "../elements/TeamCardMovil.astro";
-const user = [
+const team = [
   {
     name: "Ricardo Perez",
     rol: "Asesor de Seguros",
@@ -100,12 +100,12 @@ const texto =
             />
           </div>
           <div class="hidden w-full md:grid place-items-center mx-auto">
-            {user.map((item) => <TeamCard {...item} />)}
+            {team.map((item) => <TeamCard {...item} />)}
           </div>
           <div
             class="grid place-items-center mx-auto mb-6 gap-6 w-full md:hidden"
           >
-            {user.map((item) => <TeamCardMovil {...item} />)}
+            {team.map((item) => <TeamCardMovil {...item} />)}
           </div>
         </div>
       </div>

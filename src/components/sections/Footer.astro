@@ -11,17 +11,17 @@ import InstagramSVG from "../svgComponents/InstagramSVG.astro";
     <div
       class="h-auto flex flex-col gap-y-3 md:flex-row md:items-center justify-between"
     >
-      <div class="flex flex-col">
+      <div class="flex flex-1">
         <a
-          href="#hero"
+          href="/#inicio"
           class="self-center"
         >
           <Image
             height="1"
             width="1"
             class="h-auto w-[150px] md:w-[200px] lg:w-[300px]"
-            src={"/logos/logo.svg"}
-            alt="Logo "
+            src={"/logos/logo_completo_footer.svg"}
+            alt="Logo Islay Asesores de Seguros"
           />
         </a>
         <!--         <a
@@ -41,7 +41,7 @@ import InstagramSVG from "../svgComponents/InstagramSVG.astro";
       </div>
 
       <div
-        class="flex flex-col justify-center items-center gap-2 text-pesceBlack-100 w-full"
+        class="flex flex-col justify-center items-center gap-2 text-[#1D1D1B] w-full flex-1"
       >
         <div>
           <p class="xl:text-xl">Domicilio</p>
@@ -83,8 +83,8 @@ import InstagramSVG from "../svgComponents/InstagramSVG.astro";
             />
           </button>
           <a
-            aria-label="Link para mensaje directo al Wathsapp de Sal & Silvetti Asesores de Seguros"
-            href="https://wa.me/5493815509173?text=Hola, quiero hacerles una consulta"
+            aria-label="Link para mensaje directo al Wathsapp de Islay Asesores de Seguros"
+            href="https://wa.me/59899991100?text=Hola, quiero hacerles una consulta"
             target="_blank"
             class="transition hover:scale-150 hover:text-[#2bd46a]"
           >
@@ -97,7 +97,7 @@ import InstagramSVG from "../svgComponents/InstagramSVG.astro";
       </div>
 
       <a
-        class="flex justify-center w-full md:w-[200px] lg:w-[300px]"
+        class="flex justify-end w-full md:w-[200px] lg:w-[300px] flex-1"
         aria-label="Link de afip de Sal & Silvetti Asesores de Seguros"
         href="http://qr.afip.gob.ar/?qr=sYF7I-QMs38B9BInoFjJxQ,,"
         target="_F960AFIPInfo"
@@ -121,12 +121,6 @@ import InstagramSVG from "../svgComponents/InstagramSVG.astro";
     > / Agencia Panambi
   </p>
 </section>
-
-<style>
-  #instagram-icon:hover {
-    stroke: url(#instagram-gradient);
-  }
-</style>
 
 <script>
   import Swal from "sweetalert2";
