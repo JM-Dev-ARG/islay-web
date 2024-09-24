@@ -55,8 +55,8 @@ export default function ModalMail() {
                                 className="flex justify-center items-center gap-4 my-5"
                             >
                                 <a
-                                    aria-label="Link al Instagram de Ricardo Pablo Pesce Hijos Asesores de Seguros"
-                                    href="https://www.instagram.com/pesceseguros/"
+                                    aria-label="Link al Instagram de Islay Asesores de Seguros"
+                                    href="https://www.instagram.com/islayseguros/"
                                     target="_blank"
                                     className="transition hover:scale-150"
                                 >
@@ -153,8 +153,8 @@ export default function ModalMail() {
                             </a> */}
 
                                 <a
-                                    aria-label="Link para mensaje directo al Wathsapp de Ricardo Pablo Pesce Hijos Asesores de Seguros"
-                                    href="https://wa.me/5493815509173?text=Hola, quiero hacerles una consulta"
+                                    aria-label="Link para mensaje directo al Wathsapp de Islay Asesores de Seguros"
+                                    href="https://wa.me/59899991100?text=Hola, quiero hacerles una consulta"
                                     target="_blank"
                                     className="transition hover:scale-150 hover:text-[#2bd46a] text-pesceBlack-50"
                                 >
@@ -196,10 +196,10 @@ export default function ModalMail() {
                                     selected
                                 >
                                     Motivo de contacto</option>
-                                <option aria-label="Líneas Personales">Servicio 1</option>
-                                <option aria-label="Líneas Comerciales">Servicio 1</option>
-                                <option aria-label="Líneas Industriales">Servicio 1</option>
-                                <option aria-label="Líneas Agricolas">Servicio 1</option>
+                                <option aria-label="Líneas Personales">Hogar</option>
+                                <option aria-label="Líneas Comerciales">Automotores</option>
+                                <option aria-label="Líneas Industriales">Construcción</option>
+                                <option aria-label="Líneas Agricolas">Garantias</option>
                                 <option aria-label="Otros">Otros</option>
                             </select>
 
