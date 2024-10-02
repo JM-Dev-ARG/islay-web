@@ -21,12 +21,12 @@ const { name, rol, image, image2, description, urlLinkedin, email, reverse } =
 >
   <div
     class=`relative img__after `
-    style={`--image-url: url(${image2})`}
+    style={`--image-url: url(${image})`}
   >
     <img
       src={image}
       alt="Imagen de Sal & Silvetti Asesores de Seguros"
-      class=`w-[400px] h-[600px] relative z-10 object-cover`
+      class=`w-[400px] h-[400px] relative z-10 object-cover`
     />
   </div>
   <div class="flex flex-col w-[60%] px-6">
@@ -86,14 +86,16 @@ const { name, rol, image, image2, description, urlLinkedin, email, reverse } =
   .img__after::after {
     content: "";
     position: absolute;
+    scale: 1.01;
     height: 100%;
     width: 100%;
     background-image: var(--image-url);
     background-size: cover;
-    filter: blur(5px);
+    filter: blur(15px);
+    opacity: 0.8;
 
-    top: -10%;
-    right: -16%;
+    top: 0;
+    right: 0;
     z-index: 1;
   }
 
