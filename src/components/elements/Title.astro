@@ -10,20 +10,9 @@ type Props = {
 const { title1, offset, className, text, textColor } = Astro.props;
 ---
 
-<!-- <div
-  class=`flex w-full justify-center items-center  relative titulo ${className}`
-  data-aos="fade-up"
-  data-aos-duration="2000"
-  data-aos-once="true"
-  data-aos-offset={offset ? offset : "0"}
->
-  <h3 class="texto">
-    {title1}
-  </h3>
-</div> -->
 <div class="w-full lg:w-3/4">
   <div
-    class=`flex w-full justify-center items-center  relative titulo ${className}`
+    class=`flex w-full justify-center items-center  ${className}`
     data-aos="fade-up"
     data-aos-duration="2000"
     data-aos-once="true"
