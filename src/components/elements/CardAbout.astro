@@ -1,0 +1,41 @@
+---
+type Props = {
+  title: string;
+  description: string;
+  icon: string;
+};
+
+const { title, description, icon } = Astro.props;
+---
+
+<div class="w-4/5 lg:max-h-[350px] h-auto max-w-[400px] min-w-[300px] mt-5">
+  <div
+    class="flex flex-col items-center justify-between pt-5 px-2 pb-6 relative"
+  >
+    <span
+      class="relative mx-auto -mt-10 mb-8 rounded-full size-24 bg-[#f6faf2] flex items-center justify-center"
+    >
+      <img
+        class="size-16"
+        src={icon}
+        alt={title}
+      />
+    </span>
+
+    <h5 class="text-2xl w-full font-bold mb-2 text-center text-[#c2cda5]">
+      {title}
+    </h5>
+
+    <p class="w-full text-lg text-justify text-[#f6faf2] lg:h-[150px]">
+      {description}
+    </p>
+  </div>
+</div>
+
+<style>
+  .card {
+    box-shadow:
+      2px 2px 18px #3a3e32,
+      -2px -2px 12px #f6faf2;
+  }
+</style>

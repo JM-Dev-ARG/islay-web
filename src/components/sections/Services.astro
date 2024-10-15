@@ -9,54 +9,67 @@ import ServiceCardMobile from "../elements/ServiceCardMobile.astro";
 <section id="servicios">
   <Container className="xl:px-6 mb-6">
     <div class="w-full grid place-items-center">
-      <div>
-        <Title title1="Servicios" />
-      </div>
+      <Title
+        title1="Servicios"
+        className="text-[#1d1d1bde]"
+        text="En ISLAY, ofrecemos una amplia gama de seguros desarrollados para proteger lo que más valoras. Con 35 años de experiencia en el mercado, estamos preparados para brindarte soluciones a medida que se adapten a tus necesidades. Nuestros servicios incluyen:"
+        textColor="#3a3e32"
+      />
+    </div>
 
-      <!-- Cards web -->
-      <div
-        class="hidden lg:flex lg:gap-4 2xl:gap-8"
-        data-aos="fade-up"
-        data-aos-duration="2000"
-        data-aos-once="true"
-      >
-        {data.map((item) => <ServicesCard {...item} />)}
-      </div>
+    <!--  <Title
+        title1="Servicios"
+        className="text-[#1d1d1bde]"
+        text="En ISLAY, ofrecemos una amplia gama de seguros diseñados para proteger
+          lo que más valoras. Con 35 años de experiencia en el mercado, estamos
+          preparados para brindarte soluciones a medida que se adapten a tus
+          necesidades. Nuestros servicios incluyen:"
+        textColor="#3a3e32"
+      />
+ -->
+    <!-- Cards web -->
+    <div
+      class="hidden lg:flex lg:gap-4 2xl:gap-8"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-once="true"
+    >
+      {data.map((item) => <ServicesCard {...item} />)}
+    </div>
 
-      <!-- Cards Tablet -->
-      <div
-        class="hidden md:flex lg:hidden w-full mx-auto justify-center items-center gap-4"
-        data-aos="fade-up"
-        data-aos-duration="2000"
-        data-aos-once="true"
-      >
-        {
-          data
-            .filter((item) => item.id < 3)
-            .map((item) => <ServicesCard {...item} />)
-        }
-      </div>
-      <div
-        class="hidden md:flex lg:hidden gap-4 mt-4"
-        data-aos="fade-up"
-        data-aos-duration="2000"
-        data-aos-once="true"
-      >
-        {
-          data
-            .filter((item) => item.id > 2)
-            .map((item) => <ServicesCard {...item} />)
-        }
-      </div>
+    <!-- Cards Tablet -->
+    <div
+      class="hidden md:flex lg:hidden w-full mx-auto justify-center items-center gap-4"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-once="true"
+    >
+      {
+        data
+          .filter((item) => item.id < 3)
+          .map((item) => <ServicesCard {...item} />)
+      }
+    </div>
+    <div
+      class="hidden md:flex lg:hidden gap-4 mt-4"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-once="true"
+    >
+      {
+        data
+          .filter((item) => item.id > 2)
+          .map((item) => <ServicesCard {...item} />)
+      }
+    </div>
 
-      <!-- Cards Mobile -->
-      <div
-        class="flex md:hidden w-full mx-auto flex-col justify-center items-center gap-4"
-        data-aos="fade-up"
-        data-aos-duration="2000"
-      >
-        {data.map((item) => <ServiceCardMobile {...item} />)}
-      </div>
+    <!-- Cards Mobile -->
+    <div
+      class="flex md:hidden w-full mx-auto flex-col justify-center items-center gap-4"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+      {data.map((item) => <ServiceCardMobile {...item} />)}
     </div>
   </Container>
 </section>

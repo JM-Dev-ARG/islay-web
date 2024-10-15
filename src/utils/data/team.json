@@ -1,0 +1,40 @@
+[
+    {
+        "name": "Gustavo Kramer",
+        "rol": "Asesor de Seguros",
+        "image": "../team/gustavo.avif",
+        "image2": "../img/familia.avif",
+        "urlLinkedin": "https://www.linkedin.com/in/ricardo-pesce-hijos-asesores-de-seguros-4a9b5b1b0/",
+        "email": "gkramer@islayseguros.com",
+        "description": "fundador de ISLAY, ha sido un pilar fundamental en el desarrollo de la empresa. Su visión y experiencia han guiado a la empresa durante 35 años."
+    },
+    {
+        "name": "Florencia Kramer",
+        "rol": "Asesor de Seguros",
+        "image": "../team/florencia.avif",
+        "image2": "../img/familia.avif",
+        "urlLinkedin": "https://www.linkedin.com/in/ricardo-pesce-hijos-asesores-de-seguros-4a9b5b1b0/",
+        "email": "florencia@islayseguros.com",
+        "reverse": true,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus."
+    },
+    {
+        "name": "Ec. Federico Kramer",
+        "rol": "Asesor de Seguros",
+        "image": "../mockImg/foto-social.avif",
+        "image2": "../img/familia.avif",
+        "urlLinkedin": "https://www.linkedin.com/in/ricardo-pesce-hijos-asesores-de-seguros-4a9b5b1b0/",
+        "email": "federico@islayseguros.com",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus."
+    },
+    {
+        "name": "Ing. Juan Brito del Pino",
+        "rol": "Asesor de Seguros",
+        "image": "../team/juan.avif",
+        "image2": "../img/familia.avif",
+        "urlLinkedin": "https://www.linkedin.com/in/ricardo-pesce-hijos-asesores-de-seguros-4a9b5b1b0/",
+        "email": "jbritodepino@islayseguros.com",
+        "reverse": true,
+        "description": "Ingeniero industrial mecánico con más de 10 años de trayectoria en el rubro de la construcción su carrera fue dentro del rubro cómo gestor y ejecutor de obras y proyectos. Siempre aportará el valor de la experiencia a la hora de contemplar las polizas o seguros necesarios para su proyecto."
+    }
+]

@@ -9,21 +9,18 @@ import Container from "../elements/Container.astro";
     <div
       class="w-full lg:w-2/3 h-full flex flex-col justify-end lg:justify-center items-start gap-6 text-pretty"
     >
-      <span class="">
-        <h1 class="text1-animation opacity-0">
-          <img
-            class="w-[600px]"
-            src="./logos/logo_nombre.svg"
-            alt="Nombre con tipografia Islay"
-          />
-        </h1></span
+      <span class="text1-animation opacity-0">
+        <img
+          class="w-[1000px]"
+          src="./logos/logo_nombre.svg"
+          alt="Nombre con tipografia Islay"
+        /></span
       >
 
       <h2
-        class="md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-medium 2xl:tracking-wider word-space leading-10 2xl:leading-[45px] text-left text2-animation opacity-0 pb-[100px] lg:pb-0"
+        class="md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-semibold 2xl:tracking-wider word-space leading-10 2xl:leading-[45px] text-center md:text-left text2-animation opacity-0 pb-[100px] lg:pb-0 w-[1000px]"
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-        modi
+        35 años como refentes en la intermediación de seguros en Uruguay.
       </h2>
     </div>
   </div>
@@ -50,15 +47,15 @@ import Container from "../elements/Container.astro";
 
 <style>
   .video {
-    mask-image: linear-gradient(to top, transparent 5%, #1d1d1b 100%);
+    mask-image: linear-gradient(to top, transparent 0%, #3a3e32 30%);
   }
-  .anton {
+  /* .anton {
     font-family: "Anton", sans-serif;
-  }
+  } */
 
-  .word-space {
+  /* .word-space {
     word-spacing: 6px;
-  }
+  } */
 
   .capa {
     position: absolute;
@@ -68,13 +65,13 @@ import Container from "../elements/Container.astro";
     height: 100%;
     background-image: linear-gradient(
       180deg,
-      rgba(29, 29, 27, 0) 80%,
-      #1d1d1b 100%
+      rgba(158, 158, 147, 0) 80%,
+      #3a3e32 100%
     );
     mask-image: overlay;
   }
 
-  @keyframes enter {
+  /*   @keyframes enter {
     0% {
       opacity: 0;
       top: 120%;
@@ -102,23 +99,27 @@ import Container from "../elements/Container.astro";
       background-position: center;
       background-size: cover;
     }
-  }
+  } */
 
   .text1-animation {
     transform: translate(-150%, 0);
-    animation: textEnter 3s linear 1.5s forwards;
+    animation: textEnter 3s linear forwards;
   }
 
   .text2-animation {
-    transform: translate(-150%, 0);
-    animation: textEnter2 3s linear 2s forwards;
+    transform: translate(0, -100%);
+    animation: textEnter2 3s linear 1s forwards;
   }
 
   @keyframes textEnter {
     0% {
       opacity: 0;
     }
+    70% {
+      opacity: 0;
+    }
     90% {
+      opacity: 1;
       transform: translate(-10%, 0);
     }
     100% {
@@ -131,8 +132,11 @@ import Container from "../elements/Container.astro";
     0% {
       opacity: 0;
     }
+    70% {
+      opacity: 0;
+    }
     90% {
-      transform: translate(-10%, 0);
+      transform: translate(0, -10%);
     }
     100% {
       transform: translate(0, 0);

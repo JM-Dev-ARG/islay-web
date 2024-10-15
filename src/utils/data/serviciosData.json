@@ -2,33 +2,33 @@
     {
         "id": 1,
         "title": "Hogar",
-        "short_description": "Lorem ipsum dolor sit amet consectet adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "long_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea. Lorem ipsum dolor sit amet consectetur adipisicing elit.Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.Repudiandae modi nesciunt minus corrupti voluptates error, eaLorem ipsum dolor sit amet consectetur adipisicing elit.Repudiandae modi nesciunt minus corrupti voluptates error, ea",
+        "short_description": "Tu hogar es uno de tus mayores patrimonios. Con nuestros seguros del hogar, puedes estar tranquilo sabiendo que tu vivienda y tus bienes están protegidos contra daños y robos.",
+        "long_description": "Tu hogar es uno de tus mayores patrimonios. Con nuestros seguros del hogar, puedes estar tranquilo sabiendo que tu vivienda y tus bienes están protegidos contra daños y robos.",
         "cardBackground": "../img/casa.avif",
-        "urlContactoWhatsapp": "https://wa.me/5493815509173?text=Hola, quiero saber mas sobre las soluciones financieras"
+        "urlContactoWhatsapp": "https://wa.me/5493815509173?text=Hola, quiero saber mas sobre las coberturas de Hogar"
     },
     {
         "id": 2,
         "title": "Automotores",
-        "short_description": "Lorem ipsum dolor sit amet consectet adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "long_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea. Lorem ipsum dolor sit amet consectetur adipisicing elit.Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.Repudiandae modi nesciunt minus corrupti voluptates error, eaLorem ipsum dolor sit amet consectetur adipisicing elit.Repudiandae modi nesciunt minus corrupti voluptates error, ea",
+        "short_description": "Protege tu vehículo con nuestras pólizas de seguros de autos, que ofrecen coberturas completas y a medida. Nos aseguramos de que estés protegido ante cualquier eventualidad en la carretera.",
+        "long_description": "Protege tu vehículo con nuestras pólizas de seguros de autos, que ofrecen coberturas completas y a medida. Nos aseguramos de que estés protegido ante cualquier eventualidad en la carretera.",
         "cardBackground": "../img/auto.avif",
-        "urlContactoWhatsapp": "https://wa.me/5493815509173?text=Hola, quiero saber mas sobre las soluciones de salud"
+        "urlContactoWhatsapp": "https://wa.me/5493815509173?text=Hola, quiero saber mas sobre las coberturas de Automotores"
     },
     {
         "id": 3,
         "title": "Construcción",
-        "short_description": "Lorem ipsum dolor sit amet consectet adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "long_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea. Lorem ipsum dolor sit amet consectetur adipisicing elit.Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.Repudiandae modi nesciunt minus corrupti voluptates error, eaLorem ipsum dolor sit amet consectetur adipisicing elit.Repudiandae modi nesciunt minus corrupti voluptates error, ea",
+        "short_description": "Nuestra especialización en el rubro de la construcción nos permite ofrecerte soluciones específicas para este sector. Ya sea que necesites cubrir maquinaria, equipos o gestionar contratos y garantías, estamos aquí para asesorarte en cada paso.",
+        "long_description": "Nuestra especialización en el rubro de la construcción nos permite ofrecerte soluciones específicas para este sector. Ya sea que necesites cubrir maquinaria, equipos o gestionar contratos y garantías, estamos aquí para asesorarte en cada paso.",
         "cardBackground": "../img/construccion.avif",
-        "urlContactoWhatsapp": "https://wa.me/5493815509173?text=Hola, quiero saber mas sobre las soluciones de vida"
+        "urlContactoWhatsapp": "https://wa.me/5493815509173?text=Hola, quiero saber mas sobre las coberturas de Construccion"
     },
     {
         "id": 4,
         "title": "Garantias",
-        "short_description": "Lorem ipsum dolor sit amet consectet adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "long_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea. Lorem ipsum dolor sit amet consectetur adipisicing elit.Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.Repudiandae modi nesciunt minus corrupti voluptates error, eaLorem ipsum dolor sit amet consectetur adipisicing elit.Repudiandae modi nesciunt minus corrupti voluptates error, ea",
+        "short_description": "Ofrecemos seguros de caución (garantías) que te permiten estar protegido ante imprevistos en la compra de bienes o contratación de servicios. Nuestras pólizas te brindan la tranquilidad que necesitas para llevar adelante tus proyectos.",
+        "long_description": "Ofrecemos seguros de caución (garantías) que te permiten estar protegido ante imprevistos en la compra de bienes o contratación de servicios. Nuestras pólizas te brindan la tranquilidad que necesitas para llevar adelante tus proyectos.",
         "cardBackground": "../img/garantias.avif",
-        "urlContactoWhatsapp": "https://wa.me/5493815509173?text=Hola, quiero saber mas sobre las soluciones de vida"
+        "urlContactoWhatsapp": "https://wa.me/5493815509173?text=Hola, quiero saber mas sobre las Garantias"
     }
 ]

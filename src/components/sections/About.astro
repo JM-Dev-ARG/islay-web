@@ -1,96 +1,85 @@
 ---
 import Container from "../elements/Container.astro";
 import Title from "../elements/Title.astro";
-import imgAbout from "../../../public/img/about.avif";
+import imgAbout from "../../../public/img/about3.avif";
 import { Image } from "astro:assets";
 import TeamCard from "../elements/TeamCard.astro";
 import TeamCardMovil from "../elements/TeamCardMovil.astro";
-const team = [
-  {
-    name: "Ricardo Perez",
-    rol: "Asesor de Seguros",
-    image: "../mockImg/foto-social.avif",
-    image2: "../img/familia.avif",
-    urlLinkedin:
-      "https://www.linkedin.com/in/ricardo-pesce-hijos-asesores-de-seguros-4a9b5b1b0/",
-    email: "zVJtA@example.com",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus.",
-  },
-  {
-    name: "Ricardo Perez",
-    rol: "Asesor de Seguros",
-    image: "../mockImg/foto-social.avif",
-    image2: "../img/familia.avif",
-    urlLinkedin:
-      "https://www.linkedin.com/in/ricardo-pesce-hijos-asesores-de-seguros-4a9b5b1b0/",
-    email: "zVJtA@example.com",
-    reverse: true,
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus.",
-  },
-  {
-    name: "Ricardo Perez",
-    rol: "Asesor de Seguros",
-    image: "../mockImg/foto-social.avif",
-    image2: "../img/familia.avif",
-    urlLinkedin:
-      "https://www.linkedin.com/in/ricardo-pesce-hijos-asesores-de-seguros-4a9b5b1b0/",
-    email: "zVJtA@example.com",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus.",
-  },
-];
-
-const texto =
-  "lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modilorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modilorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. ";
+import team from "../../utils/data/team.json";
+import TextoAbout from "../elements/TextoAbout.astro";
+import aboutCardData from "../../utils/data/aboutCardData.json";
+import CardAbout from "../elements/CardAbout.astro";
 ---
 
 <section
-  class="mb-14 mt-10 overflow-hidden"
+  class="mb-14 mt-14 overflow-hidden"
   id="nosotros"
 >
   <Container>
     <div class="w-full grid place-items-center">
-      <div>
-        <Title title1="Sobre Nosotros" />
-      </div>
+      <Title title1="Sobre Nosotros" />
 
       <div
-        class="relative w-full h-full flex justify-center items-center img__relative 2xl:before:left-[25%] 2xl:before:top-[11%] before:hidden lg:before:block mt-10"
-        data-aos="fade-right"
-        data-aos-duration="2000"
-        data-aos-once="true"
-        data-aos-offset="300"
+        class="w-full relative h-full flex flex-col-reverse xl:flex-row items-center xl:mt-10 gap-10 xl:gap-0"
       >
-        <div class="hidden md:block relative w-full h-[43.75rem]">
-          <Image
-            class="relative right-0 md:-right-[15%] 2xl:-right-[22%] object-cover lg:object-contain aspect-video w-full h-full object-top"
-            src={imgAbout}
-            alt="Imagen Islay"
-          />
-          <div
-            class="md:absolute top-0 left-0 md:-top-14 md:-left-10 lg:top-[20%] lg:-left-0 grid place-items-center w-full md:w-[60%] h-auto lg:w-[50%] 2xl:w-[45%] lg:h-[90%] back backdrop-blur-[5px] md:backdrop-blur-[20px]"
-          >
-            <p class="p-5 text-white text-pretty text-[clamp(16px,2vw,18px)]">
-              {texto}
-            </p>
-          </div>
+        <div
+          class="w-full xl:w-1/3 h-auto back backdrop-blur-[5px] md:backdrop-blur-[20px]"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+          data-aos-once="true"
+          data-aos-offset="300"
+        >
+          <TextoAbout />
         </div>
 
         <div
-          class="md:hidden relative top-0 left-0 md:-top-14 md:-left-10 lg:top-[20%] lg:-left-0 grid place-items-center w-full md:w-[60%] h-auto lg:w-[50%] 2xl:w-[45%] lg:h-[90%] back backdrop-blur-[5px] md:backdrop-blur-[20px]"
+          class="relative xl:-right-10 w-full xl:w-2/3"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          data-aos-once="true"
+          data-aos-offset="300"
         >
-          <p class="p-5 text-white text-pretty text-[clamp(16px,2vw,18px)]">
-            {texto}
-          </p>
+          <Image
+            class="object-cover object-center w-full h-full"
+            src={imgAbout}
+            alt="Imagen Islay"
+          />
+        </div>
+      </div>
+
+      <div class="mt-20 md:mt-40 w-full grid place-items-center mx-auto">
+        <div
+          class="w-3/4"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-once="true"
+          data-aos-offset="300"
+        >
+          <h2 class="text-[clamp(20px,1vw+5px,30px)] text-center font-semibold">
+            Nuestro equipo está compuesto por profesionales con diferentes áreas
+            de especialización, lo que nos permite abordar una amplia gama de
+            seguros. Algunos de nuestros expertos incluyen:
+          </h2>
+        </div>
+
+        <div
+          class="flex flex-col lg:flex-row gap-6 mt-20 w-full justify-center items-center"
+          data-aos="fade-down"
+          data-aos-duration="2000"
+          data-aos-once="true"
+          data-aos-offset="300"
+        >
+          {aboutCardData.map((item) => <CardAbout {...item} />)}
         </div>
       </div>
 
       <div class="w-full grid place-items-center">
-        <div class="mt-20 md:mt-40">
-          <Title title1="El Equipo" />
-        </div>
+        <Title
+          title1="El Equipo"
+          className="text-[#1d1d1bde] mt-20 "
+          text="En ISLAY, estamos comprometidos con la formación continua y el desarrollo profesional. Creemos que un equipo bien preparado es clave para ofrecer un servicio de calidad. Por eso, invertimos en capacitación y actualizaciones constantes sobre las tendencias y novedades del sector. Estamos aquí para acompañarte en cada paso, brindándote la confianza y el respaldo que mereces. ¡Conoce a nuestro equipo y descubre cómo podemos ayudarte!"
+          textColor="#3a3e32"
+        />
         <div class="w-full grid place-items-center background relative z-10">
           <div class="absolute w-[80%] -z-10 invert opacity-20">
             <img
@@ -116,19 +105,34 @@ const texto =
 <style>
   .back {
     z-index: 2;
-    background: rgba(77, 77, 77, 0.623);
-    border-radius: 2px;
+    background: rgba(153, 153, 153, 0.199);
+    border-radius: 8px;
   }
-  .img__relative::before {
-    z-index: 1;
+
+  .back::after {
     content: "";
     position: absolute;
-    width: 25%;
-    aspect-ratio: 1;
-    background: rgba(119, 119, 119, 0.541);
-    filter: blur(2px);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 2px;
+    aspect-ratio: 1/1;
+    width: 200px;
+    height: 200px;
+    bottom: -15px;
+    right: -10px;
+    border-right: 3px solid #c2cda5;
+    border-bottom: 3px solid #c2cda5;
+    z-index: -1;
+    border-bottom-right-radius: 10px;
+  }
+  .back::before {
+    content: "";
+    position: absolute;
+    aspect-ratio: 1/1;
+    width: 220px;
+    height: 220px;
+    bottom: -10px;
+    right: -15px;
+    border-right: 3px solid #c2cda5;
+    border-bottom: 3px solid #c2cda5;
+    z-index: -1;
+    border-bottom-right-radius: 10px;
   }
 </style>

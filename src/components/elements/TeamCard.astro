@@ -22,22 +22,34 @@ const { name, rol, image, image2, description, urlLinkedin, email, reverse } =
   <div
     class=`relative img__after `
     style={`--image-url: url(${image})`}
+    data-aos={reverse ? "fade-right" : "fade-left"}
+    data-aos-duration="2000"
+    data-aos-once="true"
+    data-aos-offset="300"
   >
     <img
       src={image}
-      alt="Imagen de Sal & Silvetti Asesores de Seguros"
+      alt=`Imagen de ${name}`
       class=`w-[400px] h-[400px] relative z-10 object-cover`
     />
   </div>
-  <div class="flex flex-col w-[60%] px-6">
-    <h4 class="text-4xl mb-1">{name}</h4>
-    <h5 class="text-[#c2cda5] cormorant text-2xl mb-1">{rol}</h5>
+  <div
+    class="flex flex-col w-[60%] px-6"
+    data-aos={reverse ? "fade-left" : "fade-right"}
+    data-aos-duration="2000"
+    data-aos-once="true"
+    data-aos-offset="300"
+  >
+    <h4 class="text-[40px] mb-1 font-bold text-[#1d1d1bde]">{name}</h4>
+    <h5 class="text-[#3a3e32] font-semibold tracking-wide text-2xl mb-1">
+      {rol}
+    </h5>
     <p class="text-xl text-pretty mb-5">{description}</p>
     <span class="w-full flex justify-end items-center gap-4">
       <a
         href=`mailto:${email}`
-        aria-label="Link para copiar el mail de Sal & Silvetti Asesores de Seguros"
-        id="mail"
+        aria-label=`Link para copiar el mail ${name}`
+        id="mailName"
         class="transition hover:scale-150"
       >
         <MailSVG

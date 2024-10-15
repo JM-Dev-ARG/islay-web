@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Asesores de Seguros",
+        "description": "Conocimiento profundo del mercado y de las mejores opciones disponibles.",
+        "icon": "../img/asesor-icon.avif"
+    },
+    {
+        "title": "Especialistas en Construcción",
+        "description": "Experiencia en seguros específicos para el rubro de la construcción, asegurando que nuestros clientes estén bien protegidos.",
+        "icon": "../img/constructor-icon.avif"
+    },
+    {
+        "title": "Innovación y Desarrollo",
+        "description": "Un equipo enfocado en buscar constantemente nuevas soluciones y mejorar nuestros servicios, garantizando que estemos a la vanguardia del sector.",
+        "icon": "../img/innovacion-icon.avif"
+    }
+]

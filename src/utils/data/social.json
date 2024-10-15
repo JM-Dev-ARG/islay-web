@@ -1,36 +1,18 @@
 [
     {
-        "img": "./mockImg/foto-social.avif",
-        "text": "Lorem ipsum dolor sit amet consectet adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "name": "Lorem ipsum",
-        "rol": "Lorem ipsum",
-        "logo": "./mockImg/logo.avif",
-        "company": "Lorem ipsum"
+        "text": "Gracias a ISLAY, encontré el seguro de auto perfecto para mí. Su equipo me ayudó a entender todas las opciones y me brindó un servicio excepcional. ¡Totalmente recomendados!",
+        "name": "Fernando Martinez"
     },
     {
-        "img": "./mockImg/foto-social.avif",
-        "text": "Lorem ipsum dolor sit amet consectet adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "name": "Lorem ipsum",
-        "rol": "Lorem ipsum",
-        "logo": "./mockImg/logo.avif",
-        "company": "Lorem ipsum"
+        "text": "Como propietario de un negocio de construcción, necesitaba un seguro que cubriera todos mis riesgos, en un proyecto muy complejo. ISLAY fue la solución ideal. Su conocimiento del rubro y su atención personalizada me dieron la tranquilidad que necesitaba para potenciar mi crecimiento.",
+        "name": "Diego Perez"
     },
     {
-        "text": "Lorem ipsum dolor sit amet consectet adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "name": "Lorem ipsum",
-        "rol": "Lorem ipsum"
+        "text": "Cuando compré mi casa, sabía que necesitaba un buen seguro. El equipo de ISLAY me asesoró en cada detalle, y ahora me siento seguro sabiendo que mi hogar está protegido.",
+        "name": "Sebastian Gonazlez"
     },
     {
-        "img": "./mockImg/foto-social.avif",
-        "text": "Lorem ipsum dolor sit amet consectet adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "name": "Lorem ipsum",
-        "rol": "Lorem ipsum",
-        "logo": "./mockImg/logo.avif",
-        "company": "Lorem ipsum"
-    },
-    {
-        "text": "Lorem ipsum dolor sit amet consectet adipisicing elit. Repudiandae modi nesciunt minus corrupti voluptates error, ea Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "name": "Lorem ipsum",
-        "rol": "Lorem ipsum"
+        "text": "ISLAY me ayudó a obtener una garantía para un electrodoméstico que compré. Su atención fue rápida y eficiente, y me sentí apoyada en todo momento. Sin duda, los volveré a elegir.",
+        "name": "Laura Gómez"
     }
 ]

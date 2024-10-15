@@ -12,7 +12,10 @@ import Carrousel from "../elements/Carrousel.astro";
   <Container className="xl:px-6">
     <div class="w-full grid place-items-center">
       <div>
-        <Title title1="Compañias" />
+        <Title
+          title1="Compañias"
+          className="text-[#1d1d1bde] mb-0"
+        />
       </div>
 
       <div
@@ -25,13 +28,12 @@ import Carrousel from "../elements/Carrousel.astro";
           duration="slow"
           className="md:my-8 "
           classSlider="gap-6"
-          pause="true"
         >
           {
             data.map((item) => {
               return (
                 <img
-                  class="h-[120px] w-auto lg:w-[200px] lg:grayscale lg:invert lg:opacity-50 lg:hover:grayscale-0 lg:hover:opacity-100 lg:hover:invert-0 lg:transition-all lg:duration-500 aspect-[1/1] object-contain"
+                  class="h-[120px] w-auto lg:w-[200px] opacity-80 aspect-[1/1] object-contain"
                   src={item.imgURL}
                   alt={item.title}
                 />
