@@ -1,7 +1,7 @@
 ---
 type Props = {
   title1: string;
-  text?: string;
+  text?: string | HTMLElement;
   textColor?: string;
   offset?: string;
   className?: string;
@@ -18,21 +18,27 @@ const { title1, offset, className, text, textColor } = Astro.props;
     data-aos-once="true"
     data-aos-offset={offset ? offset : "0"}
   >
-    <h3 class="text-[clamp(50px,5vw+5px,72px)] mb-4 text-center">
+    <h3 class="text-[clamp(50px,5vw+5px,72px)] mb-4 text-center font-semibold">
       {title1}
     </h3>
   </div>
   <div
-    class=`w-full mb-10 ${text ? "" : "hidden"} text-[${textColor}]`
+    class=`w-full mb-10 ${text ? "" : "hidden"} text-[#3a3e32b7]`
     data-aos="fade-down"
     data-aos-duration="2000"
     data-aos-once="true"
     data-aos-offset={offset ? offset : "0"}
   >
     <h2
-      class="text-[clamp(20px,1vw+5px,30px)] text-center text-pretty font-semibold"
+      class="text-[clamp(20px,1vw+5px,30px)] text-center text-pretty font-semibold text-shadow"
     >
       {text}
     </h2>
   </div>
 </div>
+
+<style>
+  .text-shadow {
+    text-shadow: 0 5px 5px #3a3e3254;
+  }
+</style>
