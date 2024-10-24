@@ -2,12 +2,11 @@
 type Props = {
   title1: string;
   text?: string | HTMLElement;
-  textColor?: string;
   offset?: string;
   className?: string;
 };
 
-const { title1, offset, className, text, textColor } = Astro.props;
+const { title1, offset, className, text } = Astro.props;
 ---
 
 <div class="w-full lg:w-3/4">
@@ -39,6 +38,6 @@ const { title1, offset, className, text, textColor } = Astro.props;
 
 <style>
   .text-shadow {
-    text-shadow: 0 5px 5px #3a3e3254;
+    text-shadow: 0 3px 5px #676e5754;
   }
 </style>

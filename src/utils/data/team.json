@@ -1,40 +1,26 @@
 [
     {
         "name": "Gustavo Kramer",
-        "rol": "Asesor de Seguros",
+        "rol": "Fundador",
         "image": "../team/gustavo.avif",
-        "image2": "../img/familia.avif",
-        "urlLinkedin": "https://www.linkedin.com/in/ricardo-pesce-hijos-asesores-de-seguros-4a9b5b1b0/",
         "email": "gkramer@islayseguros.com",
-        "description": "Fundador de ISLAY, ha sido un pilar fundamental en el desarrollo de la empresa. Su visión y experiencia han guiado a la empresa durante 35 años."
+        "reverse": false,
+        "description": "Corredor de Seguros con amplia trayectoria, ha sido el pilar fundamental en el desarrollo y espacialización de la empresa. Su visión y experiencia han guiado a la empresa durante 35 años"
     },
     {
         "name": "Florencia Kramer",
-        "rol": "Asesor de Seguros",
+        "rol": "Gerente de Operaciones",
         "image": "../team/florencia.avif",
-        "image2": "../img/familia.avif",
-        "urlLinkedin": "https://www.linkedin.com/in/ricardo-pesce-hijos-asesores-de-seguros-4a9b5b1b0/",
         "email": "florencia@islayseguros.com",
         "reverse": true,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus."
-    },
-    {
-        "name": "Ec. Federico Kramer",
-        "rol": "Asesor de Seguros",
-        "image": "../mockImg/foto-social.avif",
-        "image2": "../img/familia.avif",
-        "urlLinkedin": "https://www.linkedin.com/in/ricardo-pesce-hijos-asesores-de-seguros-4a9b5b1b0/",
-        "email": "federico@islayseguros.com",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus."
+        "description": "Actual líder de administración y operaciones de la empresa. Corredora de seguros hasta casi una década, dispuesta a continuar la tradición de excelencia y servicio a los asegurados. Aporta a la organización su nueva visión manteniendo la esencia de la empresa familiar. "
     },
     {
         "name": "Ing. Juan Brito del Pino",
-        "rol": "Asesor de Seguros",
+        "rol": "Ingeniero",
         "image": "../team/juan.avif",
-        "image2": "../img/familia.avif",
-        "urlLinkedin": "https://www.linkedin.com/in/ricardo-pesce-hijos-asesores-de-seguros-4a9b5b1b0/",
         "email": "jbritodepino@islayseguros.com",
-        "reverse": true,
+        "reverse": false,
         "description": "Ingeniero industrial mecánico con más de 10 años de trayectoria en el rubro de la construcción su carrera fue dentro del rubro cómo gestor y ejecutor de obras y proyectos. Siempre aportará el valor de la experiencia a la hora de contemplar las polizas o seguros necesarios para su proyecto."
     }
 ]
