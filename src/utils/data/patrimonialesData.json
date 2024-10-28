@@ -12,6 +12,10 @@
         "title": "BSE Banco de Seguros"
     },
     {
+        "imgURL": "/logosComp/mapfre.avif",
+        "title": "Mapfre Seguros"
+    },
+    {
         "imgURL": "/logosComp/porto.avif",
         "title": "Port Seguro "
     },

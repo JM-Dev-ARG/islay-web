@@ -10,8 +10,8 @@
     {
         "id": 2,
         "title": "Automotores",
-        "short_description": "Protege tu vehículo con nuestras pólizas de seguros de autos, que ofrecen coberturas completas y a medida. Nos aseguramos de que estés protegido ante cualquier eventualidad en la carretera.",
-        "long_description": "Protege tu vehículo con nuestras pólizas de seguros de autos, que ofrecen coberturas completas y a medida. Nos aseguramos de que estés protegido ante cualquier eventualidad en la carretera.",
+        "short_description": "Protege tu vehículo con nuestras pólizas de seguros de autos, que ofrecen coberturas completas y a medida. Nos aseguramos de que estés protegido ante cualquier eventualidad.",
+        "long_description": "Protege tu vehículo con nuestras pólizas de seguros de autos, que ofrecen coberturas completas y a medida. Nos aseguramos de que estés protegido ante cualquier eventualidad.",
         "cardBackground": "../img/auto.avif",
         "urlContactoWhatsapp": "https://wa.me/59899991100?text=Hola, quiero saber mas sobre las coberturas de Automotores"
     },
@@ -25,7 +25,7 @@
     },
     {
         "id": 4,
-        "title": "Garantias",
+        "title": "Garantías",
         "short_description": "Ofrecemos seguros de caución (garantías) que te permiten estar protegido ante imprevistos en la compra de bienes o contratación de servicios. Nuestras pólizas te brindan la tranquilidad que necesitas para llevar adelante tus proyectos.",
         "long_description": "Ofrecemos seguros de caución (garantías) que te permiten estar protegido ante imprevistos en la compra de bienes o contratación de servicios. Nuestras pólizas te brindan la tranquilidad que necesitas para llevar adelante tus proyectos.",
         "cardBackground": "../img/garantias.avif",

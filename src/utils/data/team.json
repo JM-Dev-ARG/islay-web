@@ -1,11 +1,11 @@
 [
     {
         "name": "Gustavo Kramer",
-        "rol": "Fundador",
+        "rol": "Directo - Fundador",
         "image": "../team/gustavo.avif",
         "email": "gkramer@islayseguros.com",
         "reverse": false,
-        "description": "Corredor de Seguros con amplia trayectoria, ha sido el pilar fundamental en el desarrollo y espacialización de la empresa. Su visión y experiencia han guiado a la empresa durante 35 años"
+        "description": "Corredor de Seguros con amplia trayectoria, ha sido el pilar fundamental en el desarrollo y espacialización de la empresa. Su visión y experiencia han guiado a la empresa durante 35 años."
     },
     {
         "name": "Florencia Kramer",
@@ -16,11 +16,19 @@
         "description": "Actual líder de administración y operaciones de la empresa. Corredora de seguros hasta casi una década, dispuesta a continuar la tradición de excelencia y servicio a los asegurados. Aporta a la organización su nueva visión manteniendo la esencia de la empresa familiar. "
     },
     {
+        "name": "Ec. Federico Kramer",
+        "rol": "Open Innovation Consultant",
+        "image": "../team/federico.avif",
+        "email": "federico@islayseguros.com",
+        "reverse": false,
+        "description": "Economista con más de 7 años de experiencia desarrollando proyectos en el ámbito tecnológico y proyectos de InsurancesTech. Desarrollo de proyectos con instituciones internacionales en el ámbito de la investigación y desarrollo. "
+    },
+    {
         "name": "Ing. Juan Brito del Pino",
-        "rol": "Ingeniero",
+        "rol": "Responsable Técnico",
         "image": "../team/juan.avif",
         "email": "jbritodepino@islayseguros.com",
-        "reverse": false,
-        "description": "Ingeniero industrial mecánico con más de 10 años de trayectoria en el rubro de la construcción su carrera fue dentro del rubro cómo gestor y ejecutor de obras y proyectos. Siempre aportará el valor de la experiencia a la hora de contemplar las polizas o seguros necesarios para su proyecto."
+        "reverse": true,
+        "description": "Ingeniero industrial mecánico con más de 10 años de trayectoria en el rubro de la construcción. Ha desarrollado su carrera como gestor y ejecutor de obras y proyectos. Siempre aportará el valor de la experiencia a la hora de contemplar las pólizas o seguros necesarios para su proyecto."
     }
 ]

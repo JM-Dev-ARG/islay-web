@@ -1,8 +1,8 @@
 [
     {
-        "title": "Asesores de Seguros",
-        "description": "Conocimiento profundo del mercado y de las mejores opciones disponibles.",
-        "icon": "../img/asesor-icon.avif"
+        "title": "Asesoria Legal",
+        "description": "Brindamos orientación y apoyo a individuos o empresas en materia de pólizas de seguro, esencial para proteger los intereses de los asegurados y garantizar un manejo adecuado de los riesgos.",
+        "icon": "../img/legal-icon.avif"
     },
     {
         "title": "Especialistas en Construcción",
