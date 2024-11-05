@@ -1,19 +1,19 @@
 [
     {
         "id": 1,
-        "title": "Hogar",
-        "short_description": "Tu hogar es uno de tus mayores patrimonios. Con nuestros seguros del hogar, puedes estar tranquilo sabiendo que tu vivienda y tus bienes están protegidos contra daños y robos.",
-        "long_description": "Tu hogar es uno de tus mayores patrimonios. Con nuestros seguros del hogar, puedes estar tranquilo sabiendo que tu vivienda y tus bienes están protegidos contra daños y robos.",
-        "cardBackground": "../img/casa2.avif",
-        "urlContactoWhatsapp": "https://wa.me/59899991100?text=Hola, quiero saber mas sobre las coberturas de Hogar"
+        "title": "Personas",
+        "short_description": "Con nuestro asesoramiento profesionales podrás acceder a coberturas personales para protegerte de riesgos en el hogar, resguardar tu auto y asegurar tus vacaciones en todo el mundo.",
+        "long_description": "Con nuestro asesoramiento profesionales podrás acceder a coberturas personales para protegerte de riesgos en el hogar, resguardar tu auto y asegurar tus vacaciones en todo el mundo.",
+        "cardBackground": "../img/personas.avif",
+        "urlContactoWhatsapp": "https://wa.me/59899991100?text=Hola, quiero saber mas sobre las coberturas de Personas"
     },
     {
         "id": 2,
-        "title": "Automotores",
-        "short_description": "Protege tu vehículo con nuestras pólizas de seguros de autos, que ofrecen coberturas completas y a medida. Nos aseguramos de que estés protegido ante cualquier eventualidad.",
-        "long_description": "Protege tu vehículo con nuestras pólizas de seguros de autos, que ofrecen coberturas completas y a medida. Nos aseguramos de que estés protegido ante cualquier eventualidad.",
-        "cardBackground": "../img/auto.avif",
-        "urlContactoWhatsapp": "https://wa.me/59899991100?text=Hola, quiero saber mas sobre las coberturas de Automotores"
+        "title": "Corporativo",
+        "short_description": "Contamos con un equipo especializado en análisis y prevención de riesgos corporativos, capaz de diseñar planificaciones a medida que protejan el patrimonio de la empresa a largo plazo, mitigando el impacto de riesgos económicos y contribuyendo al crecimiento sostenido.",
+        "long_description": "Contamos con un equipo especializado en análisis y prevención de riesgos corporativos, capaz de diseñar planificaciones a medida que protejan el patrimonio de la empresa a largo plazo, mitigando el impacto de riesgos económicos y contribuyendo al crecimiento sostenido.",
+        "cardBackground": "../img/corporativo.avif",
+        "urlContactoWhatsapp": "https://wa.me/59899991100?text=Hola, quiero saber mas sobre las coberturas Corporativas"
     },
     {
         "id": 3,
