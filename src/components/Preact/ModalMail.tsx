@@ -1,5 +1,6 @@
 import "./ModalMail.css"
 
+/* import Mailgun = require('mailgun.js'); */
 
 async function submit(e: SubmitEvent) {
     e.preventDefault();
@@ -14,7 +15,11 @@ async function submit(e: SubmitEvent) {
         localStorage.setItem('message', 'true');
         window.location.reload();
     }
+
+
 }
+
+
 
 
 export default function ModalMail() {
