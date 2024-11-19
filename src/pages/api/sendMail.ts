@@ -10,7 +10,7 @@ export const POST: APIRoute = async ({ request }) => {
   const msj = data.get("mensaje");
 
   const mailOptions = {
-    from: import.meta.env.GMAIL_USER,
+    from: import.meta.env.MAIL_USER,
     to: import.meta.env.MAIL_TO,
     subject: "Nuevo contacto desde pagina web",
     text: `Los datos del formulario son 
