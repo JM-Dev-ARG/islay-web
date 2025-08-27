@@ -9,13 +9,16 @@ import Container from "../elements/Container.astro";
     <div
       class="w-full lg:w-2/3 h-full flex flex-col justify-end lg:justify-center items-start gap-6 text-pretty"
     >
-      <span class="text1-animation opacity-0">
+      <h1
+        class="text1-animation opacity-0"
+        aria-label="Islay Asesores de Seguros"
+      >
         <img
           class="w-[clamp(200px,80vw,1000px)]"
           src="./logos/logo_nombre.svg"
           alt="Nombre con tipografia Islay"
-        /></span
-      >
+        />
+      </h1>
 
       <h2
         class="text-md md:text-xl text-wrap lg:text-2xl xl:text-3xl 2xl:text-4xl font-semibold 2xl:tracking-wider word-space leading-10 2xl:leading-[45px] text-left text2-animation opacity-0 pb-[100px] lg:pb-0 w-[clamp(200px,80vw,1000px)]"
@@ -46,17 +49,6 @@ import Container from "../elements/Container.astro";
 </Container>
 
 <style>
-  /*  .video {
-    mask-image: linear-gradient(to top, transparent 0%, #3a3e32 10%);
-  } */
-  /* .anton {
-    font-family: "Anton", sans-serif;
-  } */
-
-  /* .word-space {
-    word-spacing: 6px;
-  } */
-
   .capa {
     position: absolute;
     top: 0;
@@ -70,36 +62,6 @@ import Container from "../elements/Container.astro";
     );
     mask-image: overlay;
   }
-
-  /*   @keyframes enter {
-    0% {
-      opacity: 0;
-      top: 120%;
-    }
-    100% {
-      opacity: 1;
-      top: 85%;
-      background: url("../../../public/img/trabajo-hero.avif");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
-  }
-
-  @keyframes enter2 {
-    0% {
-      opacity: 0;
-      right: 135%;
-    }
-    100% {
-      opacity: 1;
-      right: 90%;
-      background: url("../../../public/img/manos-hero.avif");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
-  } */
 
   .text1-animation {
     transform: translate(-150%, 0);
