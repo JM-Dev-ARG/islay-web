@@ -1,47 +1,90 @@
-# Astro Starter Kit: Minimal
+# 🌐 Sitio Web de Islay - Asesores de Seguros
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Este es el repositorio oficial del sitio web de **Islay Seguros**, una aplicación web construida con Astro. Islay es una firma de asesoría de seguros con 35 años de experiencia en el mercado uruguayo, especializada en proveer soluciones integrales de seguros para personas y empresas.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+![Captura del sitio](https://islay.netlify.app/img/captura_islay_web.png)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-## 🚀 Project Structure
+## 🚀 Estructura del Proyecto
 
-Inside of your Astro project, you'll see the following folders and files:
+El proyecto sigue la estructura estándar de una aplicación Astro.
 
 ```text
 /
 ├── public/
 ├── src/
-│   └── pages/
-│       └── index.astro
+│   ├── components/
+│   ├── layouts/
+│   ├── pages/
+│   └── utils/
+├── astro.config.mjs
+├── tailwind.config.mjs
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- `public/`: Contiene todos los activos estáticos como imágenes, logos y videos.
+- `src/`: Contiene el código fuente de la aplicación.
+- `src/components/`: Contiene componentes reutilizables de Astro y Preact, organizados en `elements`, `sections` y `svgComponents`.
+- `src/layouts/`: Contiene el `Layout.astro` principal que define la estructura de todas las páginas.
+- `src/pages/`: Contiene las páginas del sitio. `index.astro` es la página principal, y `api/sendMail.ts` es un endpoint para manejar los envíos de correo electrónico.
+- `src/utils/data/`: Contiene los archivos JSON que almacenan los datos de los servicios, miembros del equipo y tarjetas de prueba social.
+- `astro.config.mjs`: Archivo de configuración principal de Astro.
+- `tailwind.config.mjs`: Archivo de configuración para Tailwind CSS.
+- `package.json`: Lista las dependencias y scripts del proyecto.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+---
 
-Any static assets, like images, can be placed in the `public/` directory.
+## ✨ Características
 
-## 🧞 Commands
+- **Vitrina de Servicios**: Presentación detallada de los servicios de seguros ofrecidos: Personas, Corporativo, Construcción y Garantías.
+- **Sobre Nosotros**: Información sobre la historia de la compañía, sus valores y su equipo.
+- **Formulario de Contacto**: Un formulario de contacto modal (`ModalMail.tsx`) que utiliza una ruta de API para enviar correos a través de Mailgun.
+- **Diseño Responsivo**: El sitio web es completamente responsivo, con activos específicos para móvil y escritorio.
+- **Animaciones**: Animaciones sutiles al hacer scroll, implementadas con AOS (Animate On Scroll).
 
-All commands are run from the root of the project, from a terminal:
+---
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## 🧞 Comandos
 
-## 👀 Want to learn more?
+Todos los comandos se ejecutan desde la raíz del proyecto, desde una terminal:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+| Comando           | Acción                                                     |
+| :---------------- | :--------------------------------------------------------- |
+| `npm install`     | Instala las dependencias                                   |
+| `npm run dev`     | Inicia el servidor de desarrollo local en `localhost:4321` |
+| `npm run build`   | Compila el sitio de producción en la carpeta `./dist/`     |
+| `npm run preview` | Previsualiza la compilación localmente, antes de desplegar |
+
+---
+
+## 👀 Stack Tecnológico & Dependencias
+
+- **Framework**: [Astro](https://astro.build/)
+- **UI Framework**: [Preact](https://preactjs.com/)
+- **Estilos**: [Tailwind CSS](https://tailwindcss.com/), [DaisyUI](https://daisyui.com/)
+- **Despliegue**: [Netlify](https://www.netlify.com/)
+- **Animaciones**: [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/)
+- **Email**: [Mailgun.js](https://mailgun.com/)
+- **Alertas**: [SweetAlert2](https://sweetalert2.github.io/)
+
+---
+
+## 📸 Demo
+
+🔗 [Ver sitio en producción](https://islayseguros.com/)
+
+---
+
+## 📄 Licencia
+
+Este proyecto es privado y fue desarrollado por [Juan Manuel Martínez Togni](https://github.com/JM-Dev-ARG) para **Islay Seguros**.
+
+<!-- Si querés agregar una licencia MIT u otra, avisame y lo adaptamos -->
+
+---
+
+## 🙌 Agradecimientos
+
+- A [Astro](https://astro.build) por hacer el desarrollo web más simple y rápido.
+- A la comunidad de [Tailwind CSS](https://tailwindcss.com) por su enfoque moderno de estilos.
